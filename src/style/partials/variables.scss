@@ -1,0 +1,52 @@
+// FONTS
+
+@font-face {
+    font-family: 'Myriad';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Myriad'),
+    url(../fonts/Myriad/myriad.woff2) format('woff2'), 
+    url(../fonts/Myriad/myriad.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    font-style: normal;
+    font-weight: 400;
+    src: local('ProximaNova'),
+    url(../fonts/ProximaNova/proximanova-regular.woff2) format('woff2'), 
+    url(../fonts/ProximaNova/proximanova-regular.woff) format('woff');
+}
+
+$roboto-light: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+//COLOR
+
+$black: #000;
+$gray: #a1a1a1;
+$pink: #ef2c9a;
+$orange: #F83D21;
+$red: #a9171d;
+
+//MEDIA
+
+$desktop-container: 1050px;
+
+$xs-max: 575px;
+$sm-min: 576px;
+$sm-max: 767px;
+$md-min: 768px;
+$md-max: 991px;
+$lg-min: 992px;
+$lg-max: 1199px;
+$xl-min: 1200px;
+
+$xs: "(max-width: $xs-max)";
+$sm: "(min-width: $sm-min) and (max-width: $sm-max)";
+$md: "(min-width: $md-min) and (max-width: $md-max)";
+$lg: "(min-width: $lg-min) and (max-width: $lg-max)";
+$xl: "(min-width: $xl-min)";
+$xl2: "(min-width: 1439px)";
+$xl3: "(min-width: 1599px)";
+$k2: "(min-width: 1919px)";
+
