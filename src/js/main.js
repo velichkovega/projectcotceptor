@@ -18,3 +18,15 @@ $(function() {
 
 });
 })(jQuery);
+
+(function($) {
+$(function() {
+
+	$('ul.tabs__caption-top').on('click', 'li:not(.active)', function() {
+		$(this)
+			.addClass('active').siblings().removeClass('active')
+			.closest('div.tabs-top').find('div.tabs__content-top').removeClass('active').eq($(this).index()).addClass('active');
+	});
+
+});
+})(jQuery);
