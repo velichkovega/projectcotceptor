@@ -31,8 +31,11 @@ $('.tabs__content-top--slider').click(() => {
 			infinite: true,
 			speed: 300,
 			slidesToShow: 1,
+			centerMode: true,
 			slidesToScroll: 1,
 			draggable: true,
+			prevArrow: '<img src="../img/chevron-left.png">',
+  			nextArrow: '<img src="../img/chevron-right.png">',
 			responsive: [
 				{
 					breakpoint: 1024,

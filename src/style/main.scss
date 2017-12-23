@@ -215,7 +215,7 @@ body {
 }
 
 .first-tab {
-	border-radius: 10px 0 0 0 0;
+	border-radius: 10px 0 0 0;
 }
 
 .last-tab {
@@ -271,8 +271,16 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	height: 100%;
-	padding-left: 7%;
+	padding-left: 5%;
 	padding-top: 5%;
+}
+
+.main-content__butto3__first-service {
+	padding-left: 0;
+	overflow-y: scroll;
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
 }
 
 .buttone3__title {
@@ -459,5 +467,113 @@ body {
 
 .slick-list {
 	width: 100%;
+	height: auto;
+}
+
+.profile-container {
+	display: flex;
+	width: 100%;
 	height: 100%;
+}
+
+.profile__contact {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #005ac8;
+	position: fixed;
+}
+
+.profile__information {
+	height: 100%;
+	background-color: #edecec;
+}
+
+.content__img {
+	width: 50%;
+	img{
+		width: 100%;
+	}
+}
+
+.profile__name-title {
+	p {
+		font-size: 20px;
+		font-weight: 500;
+		color: #fff;
+		text-transform: uppercase;
+	}
+}
+
+.profile__text {
+	p {
+		font-size: 18px;
+		color: #cecece;
+		text-transform: uppercase;
+	}
+}
+
+.profile-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	padding-left: 15%;
+}
+
+.profile-contact__menu {
+	list-style: none;
+	padding: 15px 0;
+	li {
+		color: #cecece;
+	}
+}
+
+
+.first__item {
+	border-radius: 20px;
+	opacity: 0.5;
+	box-sizing: border-box;
+	padding: 10px 40px;
+	width: 33%;
+	height: auto;
+	text-align: center;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	img {
+		width: 65%;
+		margin: 0 auto;
+	}
+	&:hover {
+		opacity: 1;
+		transition: 0.4s;
+		background-color: #0064de;
+		box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.75);
+	}
+}
+
+
+.second-service__container {
+	display: flex;
+}
+
+.second__title {
+	font-size: 18px;
+	color: #fff;
+	font-family: "BPG Nino Mtavruli";
+	p {
+		border-radius: 20px;
+		background-color: #0064de;
+		padding: 10px 20px;
+		width: 30%;
+		margin: 10px 0;
+	}
+}
+
+.second-service__container-owerflow {
+	overflow-y: scroll;
 }
