@@ -556,6 +556,43 @@ body {
 	}
 }
 
+.first__item-blog {
+	border-radius: 20px;
+	opacity: 0.5;
+	box-sizing: border-box;
+	padding: 10px 40px;
+	width: 33%;
+	height: auto;
+	text-align: center;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 5%;
+	img {
+		width: 65%;
+		margin: 0 auto;
+	}
+	p {
+		opacity: 0;
+	}
+	&:hover {
+		opacity: 1;
+		transition: 0.4s;
+		background-color: #0064de;
+		box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.75);
+		img {
+			width: 40%;
+			transition: 0.2s;
+		}
+		p {
+			padding: 20% 0;
+			transition: 0.2s;
+			opacity: 1;
+		}
+	}
+}
+
 
 .second-service__container {
 	display: flex;
