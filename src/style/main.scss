@@ -17,6 +17,7 @@
 .body {
 	font-family: "BPG Nino Mtavruli";
 	background-color: #1e78e7;
+	padding-bottom: 100px;
 }
 
 * {
@@ -165,6 +166,7 @@ body {
 	padding: 15px;
 	box-sizing: border-box;
 	border-radius: 0 10px 10px 0;
+	overflow-y: scroll;
 }
 
 .tabs__content.active {
@@ -267,7 +269,6 @@ body {
 }
 
 .main-content__butto3 {
-	overflow-y: scroll;
 	display: flex;
 	flex-wrap: wrap;
 	height: 100%;
@@ -277,10 +278,10 @@ body {
 
 .main-content__butto3__first-service {
 	padding-left: 0;
-	overflow-y: scroll;
+	// overflow-y: scroll;
 	display: flex;
 	flex-wrap: wrap;
-	height: 100%;
+	height: auto;
 }
 
 .buttone3__title {
@@ -318,7 +319,6 @@ body {
 }
 
 .news-content {
-	overflow-y: scroll;
 	display: flex;
 	flex-wrap: wrap;
 	height: 100%;
@@ -377,7 +377,6 @@ body {
 }
 
 .container__menu-scrol {
-	overflow-y: scroll;
 	display: flex;
 	flex-wrap: wrap;
 	height: 100%;
@@ -544,6 +543,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	margin-top: 5%;
 	img {
 		width: 65%;
 		margin: 0 auto;
@@ -576,4 +576,30 @@ body {
 
 .second-service__container-owerflow {
 	overflow-y: scroll;
+}
+
+.first-service__titile {
+	margin-top: 1%;
+	text-align: center;
+	padding: 1% 5%;
+	p {
+		font-size: 18px;
+		color: #fff;
+		font-family: "BPG Nino Mtavruli";
+		padding: 10px 30px;
+		border-radius: 20px;
+		background-color: #0064de;
+		margin: 0 auto;
+	}
+}
+
+.first-service__text {
+	padding: 1% 5%;
+	p {
+		font-size: 16px;
+		font-family: "BPG Nino Mtavruli";
+		padding: 10px 30px;
+		border-radius: 10px;
+		background-color: #c8c8c8;
+	}
 }
