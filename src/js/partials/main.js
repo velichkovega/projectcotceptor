@@ -8,6 +8,7 @@
  * Copyright 2015, Codrops
  * http://www.codrops.com
  */
+console.log('wer');
 (function() {
 
 	var bodyEl = document.body,
