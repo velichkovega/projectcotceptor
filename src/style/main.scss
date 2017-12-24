@@ -32,6 +32,7 @@
 
 .meta--full {
 	width: 20%;
+	background-color: #005ac8;
 }
 
 
@@ -39,6 +40,14 @@
 .content__item.content__item--show {
 	width: 80% !important;
 	background-color: white;
+}
+
+.meta__author {
+	color: #FFf;
+}
+
+.meta__date {
+	color: #cecece;
 }
 
 .body {
@@ -224,6 +233,7 @@ body {
 	float: none;
 	// border-width: 2px 0 2px 2px;
 	// border-radius: 5px 0 0 5px;
+	width: 100%;
 }
 .vertical .tabs__caption li:last-child:before {
 	display: none;
@@ -681,4 +691,16 @@ body {
 		border-radius: 10px;
 		background-color: #c8c8c8;
 	}
+}
+
+.about-3__text-title {
+	text-align: center;
+	font-size: 22px;
+	color: #fff !important;
+}
+
+.about-3__text {
+	text-align: center;
+	font-size: 18px;
+	color: #fff !important;
 }
