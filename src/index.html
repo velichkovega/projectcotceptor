@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test task</title>
     <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="src/style/component.css">
+	<link rel="stylesheet" href="src/style/default.css">
+
+
 	<script src="./src/js/partials/modernizr.custom.js"></script>
 
 </head>
@@ -18,7 +22,7 @@
 		<li class="active first-tab"><img src="img/team.png" alt="">
 			<p>სერვისები</p>
 		</li>
-		<li>
+		<li class="initOpenItems">
 			<img src="img/team.png" alt="">
 			<p>სერვისები</p>
 		</li>
@@ -68,6 +72,13 @@
     <script src="js/main.js"></script>
 	<script src="./src/js/partials/classie.js"></script>
 	<script src="./src/js/partials/main.js"></script>
+	<script src="./src/js/partials/grid.js"></script>
 
+
+	<script>
+        $(function() {
+            Grid.init();
+        });
+	</script>
 </body>
 </html>
