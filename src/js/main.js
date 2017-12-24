@@ -9,11 +9,6 @@
 
 //= ../../node_modules/owl.carousel/dist/owl.carousel.min.js
 
-// = partials/main.js
-
-// = partials/classie.js
-
-// = partials/modernizr.custom.js
 
 $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
 	$(this)

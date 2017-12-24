@@ -18,6 +18,27 @@
     font-family: "BPG Nino Mtavruli";
 }
 
+.main {
+	//position: fixed;
+	//top:0;
+	//left: 0;
+	//right: 0;
+	margin-left: 0;
+	//background-color: white;
+}
+.content.content--show {
+	position: fixed;
+}
+
+.meta--full {
+	width: 20%;
+}
+
+.content__item.content__item--show {
+	width: 80% !important;
+	background-color: white;
+}
+
 .body {
 	font-family: "BPG Nino Mtavruli";
 	background-color: #1e78e7;
