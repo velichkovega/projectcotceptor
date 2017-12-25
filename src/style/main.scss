@@ -113,7 +113,7 @@ body {
 	height: 80%;
 	align-self: flex-end;
 	box-shadow: -7px -7px 44px 2px rgba(0,0,0,0.35);
-	border-radius: 10px 0 0 10px;
+	border-radius: 20px 0 0 20px;
 }
 
 .tabs__caption-top {
@@ -239,7 +239,7 @@ body {
 	display: none;
 	padding: 15px;
 	box-sizing: border-box;
-	border-radius: 0 10px 10px 0;
+	border-radius: 0 20px 20px 0;
 	overflow-y: auto;
 
 }
@@ -265,6 +265,22 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+
+	li {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		box-shadow: inset 0px -5px 4px 0px rgba(0,0,0,0.04);
+		&:last-child {
+			box-shadow: none;
+		}
+	}
+
+	img {
+		width: 42px;
+		height: 42px;
+	}
 }
 
 .vertical .tabs__caption li {
@@ -293,11 +309,11 @@ body {
 }
 
 .first-tab {
-	border-radius: 10px 0 0 0;
+	border-radius: 20px 0 0 0;
 }
 
 .last-tab {
-	border-radius: 0 0 0 10px;
+	border-radius: 0 0 0 20px;
 }
 
 .tabs-top {
