@@ -934,3 +934,19 @@ body {
 .maine-news-tab__text {
 	margin-top: 15px !important;
 }
+
+.atlas-img-container {
+	padding: 0;
+}
+
+.atlas-felx {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 100%;
+	img {
+		width: 50%;
+		height: auto;
+	}
+}
