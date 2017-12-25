@@ -203,7 +203,7 @@ body {
 	padding: 15px;
 	box-sizing: border-box;
 	border-radius: 0 10px 10px 0;
-	overflow-y: scroll;
+	overflow-y: auto;
 	box-shadow: 1px 0px 21px 1px rgba(0,0,0,0.66);
 }
 
@@ -671,7 +671,7 @@ body {
 }
 
 .second-service__container-owerflow {
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 .first-service__titile {
