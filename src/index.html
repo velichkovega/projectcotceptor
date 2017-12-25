@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="src/style/component.css">
 	<link rel="stylesheet" href="src/style/default.css">
-	<link rel="stylesheet" href="src/styles.css">
-	<link rel="stylesheet" href="src/touchTouch.css">
+	<link rel="stylesheet" href="src/style/styles.css">
+	<link rel="stylesheet" href="src/style/touchTouch.css">
 	<script src="./src/js/partials/modernizr.custom.js"></script>
 
 </head>
@@ -102,6 +102,15 @@
 
             setTimeout(function () {
                 Grid.init($('#og-grid-second'));
+
+            }, 200);
+        });
+        $('.threeOpenModal').on('click', function () {
+
+            console.log(Grid);
+
+            setTimeout(function () {
+                Grid.init($('#og-grid-three'));
 
             }, 200);
         });

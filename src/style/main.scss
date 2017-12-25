@@ -54,6 +54,7 @@
 	font-family: "BPG Nino Mtavruli";
 	background-image: url(../img/background.png);
 	padding-bottom: 100px !important;
+	background-repeat: repeat;
 }
 
 * {
@@ -802,4 +803,11 @@ body {
 .service-grand__text {
 	color: #fff !important;
 	font-size: 25px !important;
+}
+
+.maine-news-tab__img {
+	height: 30%;
+	img {
+		width: 100%;
+	}
 }
