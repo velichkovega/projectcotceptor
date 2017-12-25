@@ -182,3 +182,43 @@ $(function(){
     // Initialize the gallery
     $('.touchtouchs-lider').touchTouch();
 });
+
+
+$('.slick-slider-main').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    centerMode: true,
+    slidesToScroll: 1,
+    draggable: true,
+    prevArrow: '<img src="../img/chevron-left.png">',
+    nextArrow: '<img src="../img/chevron-right.png">',
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
