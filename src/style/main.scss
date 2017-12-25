@@ -9,6 +9,7 @@
 @import "partials/app";
 @import "partials/variables.scss";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
 @import "style1";
 @import "style2";
 @import "_base";
@@ -231,6 +232,22 @@ body {
 	// border-radius: 0 10px 10px 0;
 	// padding: 0px 15px;
 	width: 100%;
+
+
+}
+
+.tabs__content-top--first-screen, .tabs__content-top--slick {
+	.mCustomScrollBox {
+		display: flex;
+	}
+}
+
+
+
+.tabs__scroll {
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
 }
 
 .tabs__content-top {
@@ -240,9 +257,10 @@ body {
 	padding: 15px;
 	box-sizing: border-box;
 	border-radius: 0 20px 20px 0;
-	overflow-y: auto;
+	position: relative;
 
 }
+
 
 .tabs__content.active {
 	display: block;

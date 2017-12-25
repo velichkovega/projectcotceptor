@@ -9,17 +9,26 @@
 
 //= ../../node_modules/owl.carousel/dist/owl.carousel.min.js
 
+(function($){
+    $(window).on("load",function(){
+        $(".tabs__content-top").mCustomScrollbar({
+            mouseWheel:{ enable: true }
+        });
+    });
+})(jQuery);
 
 $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
 	$(this)
 		.addClass('active').siblings().removeClass('active')
 		.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+
 });
 
 $('ul.tabs__caption-top').on('click', 'li:not(.active)', function () {
 	$(this)
 		.addClass('active').siblings().removeClass('active')
 		.closest('div.tabs-top').find('div.tabs__content-top').removeClass('active').eq($(this).index()).addClass('active');
+
 });
 
 $('.tabs__content-top--slider').click(() => {
@@ -93,29 +102,42 @@ $('.initOpenItems').on('click', function () {
     }, 500);
 });
 
-$('.animation-open-block').on('click', function () {
+$('.first-tab, .animation-open-block').on('click', function () {
 	setTimeout(function () {
         animationCustomModule.init('#theGrid.firstAnimationBlock');
     }, 500);
 });
+//
+// $('.animation-open-block').on('click', function () {
+//     setTimeout(function () {
+//         animationCustomModule.init('#theGrid.thirdAnimationBlock');
+//     }, 500);
+// });
+//
+// $('.animation-open-block').on('click', function () {
+//     setTimeout(function () {
+//         animationCustomModule.init('#theGrid.fourthAnimationBlock');
+//     }, 500);
+// });
+//
+// $('.animation-open-block').on('click', function () {
+//     setTimeout(function () {
+//         animationCustomModule.init('#theGrid.fifthAnimationBlock');
+//     }, 500);
+// });
 
-$('.animation-open-block').on('click', function () {
+$('.grid__item').on('click',function () {
     setTimeout(function () {
-        animationCustomModule.init('#theGrid.thirdAnimationBlock');
-    }, 500);
+        $('.tabs__content-top').mCustomScrollbar("disable",true);
+    },2000)
 });
 
-$('.animation-open-block').on('click', function () {
-    setTimeout(function () {
-        animationCustomModule.init('#theGrid.fourthAnimationBlock');
-    }, 500);
+$('.close-button').on('click',function () {
+    $('.tabs__content-top').mCustomScrollbar("update");
 });
 
-$('.animation-open-block').on('click', function () {
-    setTimeout(function () {
-        animationCustomModule.init('#theGrid.fifthAnimationBlock');
-    }, 500);
-});
+
+
 $('.about-1__slik').slick({
     dots: false,
     infinite: true,

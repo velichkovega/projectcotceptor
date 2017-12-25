@@ -35,9 +35,6 @@ var animationCustomModule = function(grid) {
 
 		gridEl,
 		sidebarEl = document.getElementById('theSidebar'),
-
-
-
 		current = -1,
 		lockScroll = false, xscroll, yscroll,
 		isAnimating = false,
@@ -69,16 +66,12 @@ var animationCustomModule = function(grid) {
 
 	function init(grid) {
 		gridEl = document.querySelector(grid);
-
-        console.log(gridEl);
-
-
         gridItemsContainer = gridEl.querySelector('section.grid');
 		contentItemsContainer = gridEl.querySelector('section.content');
         gridItems = gridItemsContainer.querySelectorAll('.grid__item');
         contentItems = contentItemsContainer.querySelectorAll('.content__item');
 		closeCtrl = contentItemsContainer.querySelector('.close-button');
-
+		console.log(gridEl);
             initEvents();
 	}
 
@@ -88,7 +81,6 @@ var animationCustomModule = function(grid) {
 
 			// grid item click event
 			item.addEventListener('click', function(ev) {
-				console.log(this);
 				ev.preventDefault();
 				if(isAnimating || current === pos) {
 					return false;
@@ -96,7 +88,6 @@ var animationCustomModule = function(grid) {
 				isAnimating = true;
 				// index of current item
 				current = pos;
-				console.log(current);
 				// simulate loading time..
 				classie.add(item, 'grid__item--loading');
 				setTimeout(function() {
@@ -138,6 +129,16 @@ var animationCustomModule = function(grid) {
 		// 	}
 		// });
 	}
+
+	function destroy() {
+        gridItems = [];
+        gridEl = '';
+        gridItemsContainer = '';
+        contentItemsContainer = '';
+        gridItems = '';
+        contentItems = '';
+        closeCtrl = '';
+    }
 
 	function loadContent(item) {
 		// add expanding element/placeholder
@@ -227,9 +228,9 @@ var animationCustomModule = function(grid) {
 
 	// init();
     return {
-        init: init
+        init: init,
+		destroy:destroy
     }
 
 }();
 
-	console.log(animationCustomModule);
