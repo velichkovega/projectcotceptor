@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test task</title>
     <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="src/style/component.css">
+	<link rel="stylesheet" href="src/style/default.css">
+	<link rel="stylesheet" href="src/style/styles.css">
+	<link rel="stylesheet" href="src/style/touchTouch.css">
+	<link rel="stylesheet" href="src/style/jquery.mCustomScrollbar.css" />
+	<script src="./src/js/partials/modernizr.custom.js"></script>
+
 </head>
 <body class="body">
 
@@ -51,6 +58,44 @@
 	</div>
 
 </div><!-- .tabs -->
+	<script src="./src/js/partials/classie.js"></script>
+	<script src="./src/js/partials/main.js"></script>
     <script src="js/main.js"></script>
+
+
+	<script src="./src/js/partials/grid.js"></script>
+
+
+	<script>
+
+
+//        $(function() {
+//            Grid.init($('#og-grid-first'));
+//        });
+
+
+        $('.initfirstBlockOpenModal').on('click', function () {
+			setTimeout(function () {
+                Grid.init($('#og-grid-first'));
+                $('.initfirstBlockOpenModal').off();
+
+            }, 200);
+        });
+
+        $('.secondOpenModal').on('click', function () {
+            setTimeout(function () {
+                Grid.init($('#og-grid-second'));
+                $('.secondOpenModal').off();
+            }, 200);
+        });
+        $('.threeOpenModal').on('click', function () {
+            setTimeout(function () {
+                Grid.init($('#og-grid-three'));
+                $('.threeOpenModal').off();
+            }, 200);
+        });
+
+	</script>
+	<script src="./src/js/script.js"></script>
 </body>
 </html>
