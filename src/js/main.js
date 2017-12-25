@@ -116,7 +116,6 @@ $('.animation-open-block').on('click', function () {
         animationCustomModule.init('#theGrid.fifthAnimationBlock');
     }, 500);
 });
-
 $('.about-1__slik').slick({
     dots: false,
     infinite: true,
@@ -134,7 +133,6 @@ $('.about-1__slik').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
             }
         },
         {

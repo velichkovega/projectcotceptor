@@ -756,11 +756,12 @@ body {
 }
 
 .about-1__slider-container {
-	width: 50%;
-	height: 50%;
-	background-color: rgba(0,0,0,0.66);
-	margin: 0 auto;
-	transform: translateY(50%);
+	width: 70%;
+	height: 220px;
+	background-color: rgba(0,0,0,0.8);
+	margin-left: 12%;
+	transform: translateY(60%);
+	border-radius: 25px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -772,6 +773,32 @@ body {
 	p {
 		color: #fff;
 		font-size: 22px;
+	}
+}
+
+.about-1__slider-container {
+	.slick-list {
+		padding:0 !important;
+	}
+
+	.tab-about__info {
+		height: 220px;
+		text-align: left;
+		padding: 30px 50px;
+		word-wrap: break-word;
+
+		.info-title {
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+
+		.info-description {
+			font-size: 16px;
+			text-transform: uppercase;
+			line-height: 1.1;
+		}
 	}
 }
 
