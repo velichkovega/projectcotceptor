@@ -52,7 +52,7 @@
 
 .body {
 	font-family: "BPG Nino Mtavruli";
-	background-color: #1e78e7;
+	background-image: url(../img/background.png);
 	padding-bottom: 100px !important;
 }
 
@@ -280,6 +280,11 @@ body {
 
 .tab-about__img {
 	margin: 0 auto;
+	background-image: url(../img/2020.png);
+	width: 90%;
+	height: 90%;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .main-content__tab-slider {
@@ -313,7 +318,7 @@ body {
 .og-grid li {
 	width: 33%;
 	box-sizing: border-box;
-	margin: 12px 0 12px 0 !important;
+	margin: 12px 0 47px 0 !important;
 }
 .og-expander {
 	border-radius: 24px;
@@ -432,8 +437,8 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	height: 100%;
-	padding-left: 7%;
-	padding-top: 2%;
+	padding-left: 2%;
+	padding-top: 4%;
 }
 
 .content-part__item {
@@ -454,6 +459,7 @@ body {
 		border-radius: 10px;
 	}
 }
+
 
 .part-item__container {
 	height: 100%;
@@ -703,4 +709,97 @@ body {
 	text-align: center;
 	font-size: 18px;
 	color: #fff !important;
+}
+
+.part-item__container--opasity-part {
+	opacity: 0.5;
+	transition: 0.4s;
+	&:hover {
+		opacity: 1;
+		transition: 0.4s;
+		box-shadow: 0px 0px 32px -5px rgba(0,0,0,0.75);
+	}
+}
+
+.part-sec-mod {
+	padding-top: 0;
+	padding-left: 4%;
+}
+
+.part-item-margin {
+	margin-bottom: 87px !important;
+}
+
+.stat__main-content {
+	width: 90%;
+	margin: 0 auto;
+	background-color: #ededed;
+	padding: 15px 10px;
+	border-radius: 20px;
+	p {
+		font-size: 24px;
+	}
+}
+
+.contact-about__item-form {
+	padding-left: 10px;
+	color: #fff !important;
+	font-size: 18px !important;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	span {
+		padding: 3px 0;
+	}
+}
+
+.about-1__slider-container {
+	width: 50%;
+	height: 50%;
+	background-color: rgba(0,0,0,0.66);
+	margin: 0 auto;
+	transform: translateY(50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.about-1__slik {
+	text-align: center;
+	display: flex;
+	p {
+		color: #fff;
+		font-size: 22px;
+	}
+}
+
+.touchtouch__img {
+	width: 33%;
+	height: auto;
+	padding: 2% 2%;
+	opacity: 0.5;
+	transition: 0.4s;
+	&:before {
+		content: "text text text";
+		color: #000;
+		font-size: 22px;
+		display: inline-block;
+	}
+	&:hover {
+		opacity: 1;
+		transition: 0.4s;
+	}
+}
+
+.gallary-padding {
+	padding-top: 0;
+}
+
+.service-grand__img {
+	margin: 0 auto;
+}
+
+.service-grand__text {
+	color: #fff !important;
+	font-size: 25px !important;
 }
