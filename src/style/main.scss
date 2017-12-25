@@ -199,17 +199,18 @@ body {
 	opacity: 1;
 
 	.tab-arrow {
-		content: '';
-		display: block;
 		width: 18px;
 		height: 29px;
 		position: absolute;
 		right: -10px;
 		top: 50%;
+		z-index: 5;
 		transform: translateY(-50%);
 		background: url('../img/tab-arrow.png');
 	}
 }
+
+
 
 .tabs__caption-top .active {
 	background: #003e8a;
