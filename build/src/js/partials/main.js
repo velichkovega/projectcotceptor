@@ -170,7 +170,8 @@ var animationCustomModule = function(grid) {
 			classie.remove(dummy, 'placeholder--trans-in');
 			classie.add(dummy, 'placeholder--trans-out');
 			// position the content container
-			contentItemsContainer.style.top = scrollY() + 'px';
+			//contentItemsContainer.style.top = scrollY() + 'px';
+			contentItemsContainer.style.top = 0;
 			// show the main content container
 			classie.add(contentItemsContainer, 'content--show');
 			// show content item:
