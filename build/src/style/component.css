@@ -45,6 +45,7 @@
 	text-align: left;
 	height: 0;
 	overflow: hidden;
+	z-index: 999;
 }
 
 .og-expander-inner {
