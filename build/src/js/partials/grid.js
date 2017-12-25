@@ -360,7 +360,7 @@ var Grid = (function() {
 			this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );
 			this.$previewEl = $( '<div class="og-expander"></div>' ).append( this.$previewInner );
 			// append preview element to the item
-			this.$item.append( this.getEl() );
+            this.$item.append( this.getEl() );
 			// set the transitions for the preview and the item
 			if( support ) {
 				this.setTransition();
@@ -371,18 +371,26 @@ var Grid = (function() {
 			if( $item ) {
 				this.$item = $item;
 			}
-			
+			var self = this;
 			// if already expanded remove class "og-expanded" from current item and add it to new item
 			if( current !== -1 ) {
 				var $currentItem = $items.eq( current );
-				$currentItem.removeClass( 'og-expanded' );
-				this.$item.addClass( 'og-expanded' );
+				$.each($('body').find('.og-expanded'), function (index,value) {
+					if (value === self.$item[0]) {
+                        return ;
+					}
+					value.classList.remove('og-expanded');
+                });
+				//$currentItem.removeClass( 'og-expanded' );
+                self.$item.addClass( 'og-expanded' );
 				// position the preview correctly
 				this.positionPreview();
 			}
 
 			// update current value
 			current = this.$item.index();
+
+
 
 			// update preview´s content
 			var $itemEl = this.$item.children( 'a' ),
@@ -447,8 +455,9 @@ var Grid = (function() {
 					this.$largeImg.fadeOut( 'fast' );
 				}
 				this.$previewEl.css( 'height', 0 );
+
 				// the current expanded item (might be different from this.$item)
-				var $expandedItem = $items.eq( this.expandedIdx );
+				var $expandedItem = $items;
 				$expandedItem.css( 'height', $expandedItem.data( 'height' ) ).on( transEndEventName, onEndFn );
 
 				if( !support ) {
