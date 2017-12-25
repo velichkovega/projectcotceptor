@@ -746,7 +746,7 @@ body {
 .about-3__text {
 	text-align: center;
 	font-size: 18px;
-	color: #fff !important;
+	color: #94ADE0 !important;
 }
 
 .part-item__container--opasity-part {
@@ -885,5 +885,12 @@ body {
 .contact-about__item-form {
 	span {
 		padding: 0 10px !important;
+	}
+}
+
+.img__team-about {
+	img {
+		width: 44px;
+		// margin-left: 1%;
 	}
 }
