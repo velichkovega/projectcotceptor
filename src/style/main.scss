@@ -112,6 +112,8 @@ body {
 	margin: -1px 0 0 -1px;
 	height: 80%;
 	align-self: flex-end;
+	box-shadow: -7px -7px 44px 2px rgba(0,0,0,0.35);
+	border-radius: 10px 0 0 10px;
 }
 
 .tabs__caption-top {
@@ -121,12 +123,27 @@ body {
 	width: 100%;
 	justify-content: space-around;
 	align-items: center;
+
 	li {
 		font-family: "BPG Nino Mtavruli";
 		font-size: 30px;
 		background-color: #0064de;
-		padding: 20px 30px;
+		padding: 20px 30px 11px;
 		border-radius: 20px;
+		color: #ffffff;
+		box-shadow: 0px 18px 51px -16px rgba(0,0,0,0.55);
+		transition: .3s;
+
+		&:hover {
+			box-shadow: none;
+			font-weight: bold;
+			background: #003e8a;
+		}
+
+		&.active {
+			box-shadow: none;
+			font-weight: bold;
+		}
 	}
 }
 .tabs__caption li:last-child:before {
@@ -147,6 +164,7 @@ body {
 .tabs__caption li {
 	padding: 9px 15px;
 	// margin: 1px 0 0 1px;
+	opacity:0.7;
 	background: #005ac8;
 	color: #FFF;
 	position: relative;
@@ -155,6 +173,7 @@ body {
 	// border-radius: 5px 5px 0 0;
 	text-align: center;
 	height: 25%;
+	transition:.5s;
 }
 .tabs__caption li:not(.active) {
 	cursor: pointer;
@@ -166,16 +185,33 @@ body {
 
 .tabs__caption li:not(.active):hover {
 	background: #003e8a;
+	opacity: 1;
+	font-weight: bold;
 }
+
+
 
 .tabs__caption .active {
 	background: #003e8a;
-	color: #000;
+	color: #fff;
+	font-weight: bold;
+	opacity: 1;
+
+	.tab-arrow {
+		content: '';
+		display: block;
+		width: 18px;
+		height: 29px;
+		position: absolute;
+		right: -10px;
+		top: 50%;
+		transform: translateY(-50%);
+		background: url('../img/tab-arrow.png');
+	}
 }
 
 .tabs__caption-top .active {
 	background: #003e8a;
-	color: #000;
 }
 
 
@@ -205,7 +241,7 @@ body {
 	box-sizing: border-box;
 	border-radius: 0 10px 10px 0;
 	overflow-y: auto;
-	box-shadow: 1px 0px 21px 1px rgba(0,0,0,0.66);
+
 }
 
 .tabs__content.active {
@@ -786,6 +822,7 @@ body {
 		text-align: left;
 		padding: 30px 50px;
 		word-wrap: break-word;
+		overflow: hidden;
 
 		.info-title {
 			font-size: 18px;
