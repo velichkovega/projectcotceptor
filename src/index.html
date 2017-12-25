@@ -26,7 +26,7 @@
 			<img src="img/team.png" alt="">
 			<p>სერისები</p>
 		</li>
-		<li>
+		<li class="initfirstBlockOpenModal">
 			<img src="img/team.png" alt="">
 			<p>სერვისები</p>	
 		</li>
@@ -69,16 +69,45 @@
 	</div>
 
 </div><!-- .tabs -->
-    <script src="js/main.js"></script>
+
 	<script src="./src/js/partials/classie.js"></script>
 	<script src="./src/js/partials/main.js"></script>
+    <script src="js/main.js"></script>
+
+
 	<script src="./src/js/partials/grid.js"></script>
 
 
 	<script>
-        $(function() {
-            Grid.init();
+
+
+//        $(function() {
+//            Grid.init($('#og-grid-first'));
+//        });
+
+
+        $('.initfirstBlockOpenModal').on('click', function () {
+
+            console.log(Grid);
+
+			setTimeout(function () {
+                Grid.init($('#og-grid-first'));
+
+            }, 200);
         });
+
+        $('.secondOpenModal').on('click', function () {
+
+            console.log(Grid);
+
+            setTimeout(function () {
+                Grid.init($('#og-grid-second'));
+
+            }, 200);
+        });
+
 	</script>
+
+
 </body>
 </html>

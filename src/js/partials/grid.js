@@ -161,12 +161,12 @@ $.fn.imagesLoaded = function( callback ) {
 	return deferred ? deferred.promise( $this ) : $this;
 };
 
-var Grid = (function() {
+var Grid = function() {
 
-		// list of items
-	var $grid = $( '#og-grid' ),
-		// the items
-		$items = $grid.children( 'li' ),
+	// 	// list of items
+	var $grid,
+	// 	// the items
+		$items,
 		// current expanded item's index
 		current = -1,
 		// position (top) of the expanded item
@@ -196,8 +196,15 @@ var Grid = (function() {
 			easing : 'ease'
 		};
 
-	function init( config ) {
-		
+	function init(grid, config) {
+
+        // list of items
+        	$grid = grid;
+
+        	console.log($grid);
+            // the items
+            $items = $grid.children( 'li' );
+
 		// the settings..
 		settings = $.extend( true, {}, settings, config );
 
@@ -512,4 +519,4 @@ var Grid = (function() {
 		addItems : addItems
 	};
 
-})();
+}();
