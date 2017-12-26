@@ -1,7 +1,8 @@
 /*
 * Third Party
 */
-@import "../../bower_components/normalize.css/normalize.css";
+@import "../../bower_components/normalize.css/normalize";
+@import "../../bower_components/select2/dist/css/select2";
 
 /*
 * Custom
@@ -9,11 +10,11 @@
 @import "partials/app";
 @import "partials/variables.scss";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
-@import "../../node_modules/slick-carousel/slick/slick.scss";
 @import "style1";
 @import "style2";
 @import "_base";
 @import "_mediaqueries.scss";
+@import "daterangepicker";
 @font-face {
     src: url(../fonts/bpg-nino-mtavruli-webfont.ttf);
     font-family: "BPG Nino Mtavruli";
@@ -958,3 +959,100 @@ body {
 	display: none;
 }
 
+.select2-container,.datepicker {
+	width: 125px !important;
+	height: 40px;
+	outline: 0;
+	box-shadow: 0px 18px 51px -16px rgba(0, 0, 0, 0.55);
+}
+
+
+
+.select2-container--default .select2-selection--single {
+	background: #0064de;
+	border-radius: 20px !important;
+	color: #ffffff !important;
+	outline: 0;
+	border:0;
+	height: 40px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content:center;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	top: 10px;
+	right: 10px;
+	background: url("../img/funnel.png") no-repeat;
+	background-size: contain;
+	* {
+		display: none;
+	}
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+	padding-top: 3px;
+	padding-left: 25px;
+	padding-right:20px;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.select2-dropdown {
+	top: 15px;
+	border-radius: 10px !important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-image: -moz-linear-gradient( 0deg, rgb(1,94,208) 0%, rgb(41,136,255) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(1,94,208) 0%, rgb(41,136,255) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(1,94,208) 0%, rgb(41,136,255) 100%);
+	&:last-child {
+		border-radius: 0 0 7px 7px;
+	}
+}
+
+.select2-results__option {
+	color: #0064dd;
+}
+
+.select2-container--default .select2-results__option[aria-selected="true"] {
+	&:last-child {
+		border-radius: 0 0 7px 7px;
+	}
+}
+
+.datepicker {
+	background: #0064de;
+	border-radius: 20px !important;
+	color: #ffffff !important;
+	vertical-align: middle;
+	margin-left: 25px;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content:center;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 25px;
+	padding-top: 3px;
+	cursor: pointer;
+	position: relative;
+	width: 110px !important;
+
+	.date-ico {
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		background: url('../img/calendar-day-15.png') no-repeat;
+		background-size: contain;
+		width: 18px;
+		height: 18px;
+	}
+}
+
+.filters {
+	padding-bottom: 20px;
+}
