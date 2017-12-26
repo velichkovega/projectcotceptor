@@ -7,15 +7,20 @@ html {
 
 .body-main {
     background-color: #fff !important;
+        background-image: url(../img/background.png);
+    background-repeat: repeat;
 }
+
 
 body {
     font-family: "BPG Nino Mtavruli" !important;
+
 }
 
 .container-main-page {
     margin: 0 auto;
     width: 1050px;
+    background-color: #fff;
     // box-shadow: 0px -1px 70px -1px rgba(0,0,0,0.53);
     @media (max-width: 1024px) {
         width: 90%;
@@ -36,6 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .main__navigation-menu {
@@ -65,7 +71,8 @@ body {
 }
 
 .button-calendar {
-    height: 200px;
+    z-index: 99;
+    // height: 200px;
     position: relative;
     padding-bottom: 15px;
     display: flex;
@@ -80,7 +87,9 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        transform: rotatex(90deg);
+        width: 100%;
+        height: 100%;
+        display: none;
     }
 }
 
@@ -127,7 +136,7 @@ body {
 .page__col--container {
     width: 100%;
     padding: 15px 0 20px 0;
-    background-image: linear-gradient(to left, #0036ff 0%, #2173ff 100%);
+    background-color: #516BB2;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -184,7 +193,7 @@ body {
 .buttonton-seven {
     width: 33%;
     margin: 10px auto;
-    color: #0a66d8;
+    color: #fff;
     font-size: 14px;
     border-radius: 40px;
     background-color: rgba(255,255,255,0.5);
@@ -197,7 +206,6 @@ body {
     &:hover {
         background-color: #0a66d8;
         transition: 0.4s;
-        color: #fff;
     }
 }
 
@@ -282,4 +290,96 @@ body {
 
 .background-slik-main {
     background-image: linear-gradient(to left, #0036ff 0%, #2173ff 100%);
+    background-image: url(../img/part2.png);
+    background-position: center bottom;
+    background-size: 220%;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 5%;
+}
+
+.button-down__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 50px;
+        cursor: pointer;
+    }
+}
+
+.button-down__slik {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1px;
+    left: 0;
+    right: 0;
+
+}
+
+.fix {
+    height: 46px !important;
+    background-color: #fff;
+}
+
+.footer-container-main {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.footer-col-left {
+    width: 40%;
+}
+
+.footer-col-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-col-left__text {
+    color: #0a66d8;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.social__footer {
+    display: flex;
+    justify-content: center;
+    width: 38%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.social__footer__img {
+    margin: 25px;
+    width: 40px;
+    margin: 0 auto;
+    img {
+
+        // display: block;
+    width: 100%;
+    }
+}
+
+.footer__img {
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.img__header-main {
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    z-index: 1;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
