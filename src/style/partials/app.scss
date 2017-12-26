@@ -32,7 +32,7 @@ body {
     background-position: center center;
     background-size: cover;
     height: 600px;
-    padding: 40px 0 30px 0;
+    padding: 40px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,11 +65,22 @@ body {
 }
 
 .button-calendar {
+    height: 200px;
+    position: relative;
+    padding-bottom: 15px;
     display: flex;
     justify-content: space-between;
     span {
         margin: 0 30px;
         cursor: pointer;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: rotatex(90deg);
     }
 }
 
@@ -116,7 +127,7 @@ body {
 .page__col--container {
     width: 100%;
     padding: 15px 0 20px 0;
-    background: linear-gradient(45deg, rgba(66,112,251,0.78) 0%,rgba(31,61,178,1) 100%);
+    background-image: linear-gradient(to left, #0036ff 0%, #2173ff 100%);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -266,4 +277,9 @@ body {
 .slick-slider-main {
     width: 80%;
     margin: 30px auto;
+    display: flex !important;
+}
+
+.background-slik-main {
+    background-image: linear-gradient(to left, #0036ff 0%, #2173ff 100%);
 }

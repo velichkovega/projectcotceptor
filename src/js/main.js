@@ -188,12 +188,12 @@ $('.slick-slider-main').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 3,
     centerMode: true,
     slidesToScroll: 1,
     draggable: true,
-    prevArrow: '<img src="../img/chevron-left.png">',
-    nextArrow: '<img src="../img/chevron-right.png">',
+    prevArrow: '<img src="../img/shape-1.png">',
+    nextArrow: '<img src="../img/shape-1.png">',
     responsive: [
         {
             breakpoint: 1024,
