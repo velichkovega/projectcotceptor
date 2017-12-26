@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "normalize.css": "*",
-    "jquery": "2.*"
+    "jquery": "2.*",
+    "select2": "~4.0"
   }
 }

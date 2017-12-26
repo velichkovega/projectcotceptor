@@ -3,11 +3,13 @@
  */
 //= ../../bower_components/jquery/dist/jquery.js
 
+//= ../../bower_components/select2/dist/js/select2.js
+
 //= ../../node_modules/slick-carousel/slick/slick.js
 
-//= ../../node_modules/owl.carousel/dist/owl.carousel.min.js
+//= datepicker/moment.min.js
 
-//= ../../node_modules/owl.carousel/dist/owl.carousel.min.js
+//= datepicker/daterangepicker.js
 
 (function($){
     $(window).on("load",function(){
@@ -221,4 +223,17 @@ $('.slick-slider-main').slick({
         // settings: "unslick"
         // instead of a settings object
     ]
+});
+
+$('.js-filter').select2({
+    width: 'resolve',
+    minimumResultsForSearch: Infinity
+});
+
+
+$('.js-datepicker').daterangepicker({
+    "singleDatePicker": true,
+    "autoUpdateInput": false
+}, function(start, end, label) {
+    console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
 });
