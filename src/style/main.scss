@@ -1118,3 +1118,68 @@ body {
 		transition: 0.4s;
 	}
 }
+
+.button__next-prev__tabs {
+	position: absolute;
+	width: 75%;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.next-prev__tabs__item {
+	padding: 12px 0;
+	span {
+		font-size: 16px;
+		color: #fff;
+		text-transform: uppercase;
+		padding-top: 7px;
+		padding-left: 17px;
+	}
+}
+
+// .prev-tab__befor {
+// 	&:before {
+// 		content: "";
+// 		background-image: url(../img/shape-1.png);
+// 		width: 21px;
+// 		height: 25px;
+// 		display: inline-block;
+// 		background-size: cover;
+// 		transform: rotate(90deg);
+// 		padding: 0 5px;
+// 		margin-right: 10px;
+// 	}
+// }
+
+.next-prev__img {
+	height: 24px;
+	width: 18px;
+	img {
+		height: 100%;
+		width: 100%;
+		transform: rotate(90deg);
+	}
+}
+
+.next-button-about {
+	img {
+		transform: rotate(-90deg);
+	}
+}
+
+.next-prev__tabs__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.next-button-about__span {
+	padding-right: 17px;
+}
+
+.stat-three-tab {
+	width: 20% !important;
+	margin: 0 0 !important;
+}
