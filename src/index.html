@@ -64,7 +64,7 @@
 		//= template/tab_main-part.html
 	</div>
 
-	<div class="tabs__content">
+	<div class="tabs__content project-tab-animation">
 		//= template/tab_main-projects.html
 	</div>
 
@@ -112,6 +112,12 @@
             setTimeout(function () {
                 Grid.init($('.og-grid-three'));
                 $('.threeOpenModal').off();
+            }, 200);
+        });
+        $('.statAnimationInit').on('click', function () {
+            setTimeout(function () {
+                Grid.init($('.og-grid-stat'));
+                $('.statAnimationInit').off();
             }, 200);
         });
 

@@ -104,11 +104,31 @@ $('.initOpenItems').on('click', function () {
     }, 500);
 });
 
+$('.animationCareerBlog').on('click', function () {
+    setTimeout(function () {
+        animationCustomModule.init('#theGrid.blogCareer-blog');
+    }, 500);
+});
+
 $('.first-tab, .animation-open-block').on('click', function () {
 	setTimeout(function () {
         animationCustomModule.init('#theGrid.firstAnimationBlock');
     }, 500);
 });
+
+$('.project-tab-animation').on('click', function () {
+	setTimeout(function () {
+        animationCustomModule.init('#theGrid.threeAnimationProject');
+    }, 500);
+});
+
+// $('.first-tab, .animation-open-block').on('click', function () {
+// 	setTimeout(function () {
+//         animationCustomModule.init('#theGrid.secondAnimationBlock');
+//     }, 500);
+// });
+
+
 //
 // $('.animation-open-block').on('click', function () {
 //     setTimeout(function () {
@@ -236,4 +256,51 @@ $('.js-datepicker').daterangepicker({
     "autoUpdateInput": false
 }, function(start, end, label) {
     console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
+});
+
+$('.tabs__content-top--slider').click(() => {
+	setTimeout(() => {
+		$('slick-slider-socntiner__news').addClass('active');
+
+		$('.slick-slider-socntiner__news').slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 3,
+			centerMode: true,
+			slidesToScroll: 1,
+			draggable: true,
+			prevArrow: '<img src="../img/chevron-left.png">',
+  			nextArrow: '<img src="../img/chevron-right.png">',
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+				// You can unslick at a given breakpoint now by adding:
+				// settings: "unslick"
+				// instead of a settings object
+			]
+		});
+	},0)
+
 });

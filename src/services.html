@@ -21,7 +21,7 @@
 <div class="tabs  vertical" id="flex">
 
 	<ul class="tabs__caption">
-		<li class="active first-tab"><img src="img/team.png" alt="">
+		<li class="active first-tab serviceFirst"><img src="img/team.png" alt="">
 			<p>სერვისები</p>
 			<div class="tab-arrow"></div>
 		</li>
@@ -30,7 +30,7 @@
 			<p>სერვისები</p>
 			<div class="tab-arrow"></div>
 		</li>
-		<li>
+		<li class="servicegrand-one">
 			<img src="img/team.png" alt="">
 			<p>სერვისები</p>	
 			<div class="tab-arrow"></div>
@@ -89,14 +89,26 @@
                 $('.secondOpenModal').off();
             }, 200);
         });
-        $('.threeOpenModal').on('click', function () {
+        $('.serviceFirst').on('click', function () {
             setTimeout(function () {
-                Grid.init($('#og-grid-three'));
-                $('.threeOpenModal').off();
+                Grid.init($('#og-greed-treee'));
+                $('.serviceFirst').off();
             }, 200);
         });
-
+        $('.serviceFirst-two').on('click', function () {
+            setTimeout(function () {
+                Grid.init($('#og-greed-treee-two'));
+                $('.serviceFirst-two').off();
+            }, 200);
+        });
+        $('.servicegrand-one').on('click', function () {
+            setTimeout(function () {
+                Grid.init($('#og-grid-grand'));
+                $('.servicegrand-one').off();
+            }, 200);
+        });
 	</script>
 	<script src="./src/js/script.js"></script>
+	<script src="./src/js/jquery.mCustomScrollbar.concat.min.js"></script>
 </body>
 </html>

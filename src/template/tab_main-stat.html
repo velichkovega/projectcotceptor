@@ -2,11 +2,27 @@
 
 	<ul class="tabs__caption-top">
 		<li class="active">ჩვენი სტატისტიკა</li>
-		<li>კვლევები</li>
+		<li class="statAnimationInit" >კვლევები</li>
 		<li>მონაცემები</li>
 	</ul>
 
 	<div class="tabs__content-top tabs__content-top--slick active">
+        <div class="filters">
+            <select  class="js-filter" name="" id="">
+                <option selected disabled value="">Filter</option>
+                <option value="">საბეჭდი</option>
+                <option value="">ტიპოგრაფიული</option>
+                <option value="">არამედ</option>
+            </select>
+            <div class="datepicker js-datepicker">
+                <p>Year</p>
+                <div class="date-ico"></div>
+            </div>
+            <div class="datepicker js-datepicker">
+                <p>Cvar</p>
+                <div class="date-ico"></div>
+            </div>
+        </div>
 		<div class="main-content__tab-slider">
 			<div class="tab-slider">
 				<img src="img/profclass2.png" alt="">
@@ -27,7 +43,7 @@
 		<div class="container__menu-scrol part-sec-mod">
 
 
-			<ul id="og-grid" class="og-grid">
+			<ul id="og-grid" class="og-grid og-grid-stat">
 				<li>
 					<a href="/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
 						<img src="img/4491.png" alt="img01"/>
@@ -68,11 +84,14 @@
 
 
 	<div class="tabs__content-top">
-		<p><select name="text" id="select-stat">
-			<option value="value1">text</option>
-			<option value="value2">text</option>
-			<option value="value3">text</option>
-		</select></p>
+        <div class="filters">
+            <select  class="js-filter" name="" id="">
+                <option selected disabled value="">Filter</option>
+                <option value="">საბეჭდი</option>
+                <option value="">ტიპოგრაფიული</option>
+                <option value="">არამედ</option>
+            </select>
+        </div>
 		<div class="stat__main-content">
 			<p>გავრცელებული მოსაზრებით, Lorem Ipsum შემთხვევითი ტექსტი სულაც არაა. მისი ფესვები ჯერკიდევ ჩვ. წ. აღ-მდე 45 წლის დროინდელი კლასიკური ლათინური ლიტერატურიდან მოდის. ვირჯინიის შტატში მდებარე ჰემპდენ-სიდნეის კოლეჯის პროფესორმა რიჩარდ მაკკლინტოკმა აიღო ერთ-ერთი ყველაზე იშვიათი ლათინური სიტყვა "consectetur" Lorem Ipsum-პასაჟიდან და გადაწყვიტა მოეძებნა იგი კლასიკურ ლიტერატურაში. ძიება შედეგიანი აღმოჩნდა — ტექსტი Lorem Ipsum გადმოწერილი ყოფილა ციცერონის "de Finibus Bonorum et Malorum"-ის 1.10.32 და 1.10.33 თავებიდან. ეს წიგნი ეთიკის თეორიის ტრაქტატია, რომელიც რენესანსის პერიოდში ძალიან იყო გავრცელებული. Lorem Ipsum-ის პირველი ხაზი, "Lorem ipsum dolor sit amet..." სწორედ ამ წიგნის 1.10.32 თავიდანაა.
 
