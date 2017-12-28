@@ -5,6 +5,8 @@
 
 //= ../../bower_components/select2/dist/js/select2.js
 
+//= ../../bower_components/lightbox2/dist/js/lightbox.js
+
 //= ../../node_modules/slick-carousel/slick/slick.js
 
 //= datepicker/moment.min.js
@@ -13,7 +15,6 @@
 
 //= partials/script.js
 
-//= partials/touchTouch.jquery.js
 
 (function($){
     $(window).on("load",function(){
@@ -209,13 +210,6 @@ $('.about-1__slik').slick({
     ]
 });
 
-$(function(){
-
-    // Initialize the gallery
-    $('#tuch-gallery a').touchTouch();
-});
-
-
 $('.slick-slider-main').slick({
     dots: false,
     infinite: true,
@@ -365,6 +359,8 @@ $(function(){
         $('#mediator-menu__wrap').addClass('close__mediator-menu');
     })
 })
+
+
 
 
 // $(function(){
