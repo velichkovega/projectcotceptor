@@ -280,8 +280,8 @@ $('.news-slider-init').click(() => {
 			centerMode: true,
 			slidesToScroll: 1,
 			draggable: true,
-			prevArrow: '<img src="../img/chevron-left.png">',
-  			nextArrow: '<img src="../img/chevron-right.png">',
+			prevArrow: '<img src="/img/chevron-left.png">',
+  			nextArrow: '<img src="/img/chevron-right.png">',
 			responsive: [
 				{
 					breakpoint: 1024,
@@ -322,7 +322,7 @@ $(function(){
                 left: '-385px'
             }, 200);
             $('.modal-overlay').removeClass('active-hiden-menu');
-            $('.container-main-page').animate({ 
+            $('.body').animate({ 
                 left: '0px' 
             }, 200);
         });
@@ -332,13 +332,14 @@ $(function(){
                 left: '0px'
             }, 200);
             $('.modal-overlay').addClass('active-hiden-menu');
-            $('.container-main-page').animate({ 
+            $('.body').animate({ 
                 left: '185px' 
             }, 200);
+
         });
         
         $(document).on('click','.modal-overlay', function() {
-             $('.menu__hiden').animate({
+             $('.body').animate({
                 left: '-385px'
             }, 200);
             $('.modal-overlay').removeClass('active-hiden-menu');
@@ -364,3 +365,10 @@ $(function(){
         $('#mediator-menu__wrap').addClass('close__mediator-menu');
     })
 })
+
+
+// $(function(){
+//     $(document).on('click','#project__filtr', function(){
+//         $('#filtr__init-prohect').addClass('block__project-filtr');
+//     })
+// })

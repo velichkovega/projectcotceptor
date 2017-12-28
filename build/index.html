@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="bakcground-html__tab">
 <head lang="ru">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,22 @@
 </head>
 <body class="body">
 
+    <div class="menu__hiden">
+        <div class="close__menu-hiden" id="hidden_close">
+            <img src="img/close.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#">დასაქმების</a></li>
+            <li><a href="#">დასაქმების</a></li>
+            <li><a href="#">დასაქმების</a></li>
+            <li><a href="#">დასაქმების</a></li>
+            <li><a href="#">დასაქმების</a></li>
+        </ul>
+    </div>
 
+                    <div class="navigation-menu__burger btn-open">
+                        <span><img src="img/menu.png" alt="burger"></span>
+                    </div>
 <div class="tabs  vertical" id="flex">
 
 	<ul class="tabs__caption">
@@ -1142,7 +1157,7 @@
 		</div><!-- .tabs -->
 	</div>
 
-	<div class="tabs__content project-tab-animation">
+	<div class="tabs__content project-tab-animation" id="project__filtr">
 		<div class="tabs-top">
 		
 		    <ul class="tabs__caption-top">
@@ -1152,14 +1167,14 @@
 		    </ul>
 		
 		    <div class="tabs__content-top  active">
-		        <div class="filters">
+		        <div class="filters" id="filtr__init-prohect">
 		            <select  class="js-filter" name="" id="">
 		                <option selected disabled value="">Filter</option>
 		                <option value="">საბეჭდი</option>
 		                <option value="">ტიპოგრაფიული</option>
 		                <option value="">არამედ</option>
 		            </select>
-		            <div class="datepicker js-datepicker">
+		            <div class="datepicker js-datepicker" id="yearFilret">
 		                <p>Year</p>
 		                <div class="date-ico"></div>
 		            </div>
