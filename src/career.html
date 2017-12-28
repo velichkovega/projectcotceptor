@@ -45,7 +45,7 @@
         //= template/tab_career-blog.html
 	</div>
 
-	<div class="tabs__content">
+	<div class="tabs__content atlasAnimationInit">
 		//= template/tab_career-atlas.html
 	</div>
 
@@ -74,10 +74,10 @@
 //        });
 
 
-        $('.initfirstBlockOpenModal').on('click', function () {
+        $('.initAtlasAccard').on('click', function () {
 			setTimeout(function () {
-                Grid.init($('#og-grid-first'));
-                $('.initfirstBlockOpenModal').off();
+                Grid.init($('#og-grid-atlas'));
+                $('.initAtlasAccard').off();
 
             }, 200);
         });

@@ -11,6 +11,10 @@
 
 //= datepicker/daterangepicker.js
 
+//= partials/script.js
+
+//= partials/touchTouch.jquery.js
+
 (function($){
     $(window).on("load",function(){
         $(".tabs__content-top").mCustomScrollbar({
@@ -122,6 +126,12 @@ $('.project-tab-animation').on('click', function () {
     }, 500);
 });
 
+$('.atlasAnimationInit').on('click', function () {
+	setTimeout(function () {
+        animationCustomModule.init('#theGrid.AtlasAnimation');
+    }, 500);
+});
+
 // $('.first-tab, .animation-open-block').on('click', function () {
 // 	setTimeout(function () {
 //         animationCustomModule.init('#theGrid.secondAnimationBlock');
@@ -202,7 +212,7 @@ $('.about-1__slik').slick({
 $(function(){
 
     // Initialize the gallery
-    $('.touchtouchs-lider').touchTouch();
+    $('#tuch-gallery a').touchTouch();
 });
 
 
@@ -304,3 +314,53 @@ $('.news-slider-init').click(() => {
 	},0)
 
 });
+
+$(function(){
+
+        $(document).on('click','#hidden_close',function() {
+            $('.menu__hiden').animate({
+                left: '-385px'
+            }, 200);
+            $('.modal-overlay').removeClass('active-hiden-menu');
+            $('.container-main-page').animate({ 
+                left: '0px' 
+            }, 200);
+        });
+
+        $('.btn-open').click(function() {
+            $('.menu__hiden').animate({
+                left: '0px'
+            }, 200);
+            $('.modal-overlay').addClass('active-hiden-menu');
+            $('.container-main-page').animate({ 
+                left: '185px' 
+            }, 200);
+        });
+        
+        $(document).on('click','.modal-overlay', function() {
+             $('.menu__hiden').animate({
+                left: '-385px'
+            }, 200);
+            $('.modal-overlay').removeClass('active-hiden-menu');
+        });
+
+})
+
+
+$(function(){
+    $(document).on('click',"#mediator-slik-main",function(){
+        $('.fix').animate({
+            height: '250px'
+        },200);
+        $('#mediator-slik-main').addClass('close__munu-slick');
+        $('#mediator-menu__wrap').removeClass('close__mediator-menu')
+    });
+
+    $(document).on('click','.close__munu-slick',function(){
+        $('.fix').animate({
+            height: '46px'
+        },200);
+        $('#mediator-slik-main').removeClass('close__munu-slick');
+        $('#mediator-menu__wrap').addClass('close__mediator-menu');
+    })
+})

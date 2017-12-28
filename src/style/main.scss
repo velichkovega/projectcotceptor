@@ -668,7 +668,7 @@ body {
 	border-radius: 20px;
 	opacity: 0.5;
 	box-sizing: border-box;
-	padding: 10px 40px;
+	padding: 7px 40px;
 	width: 33%;
 	height: auto;
 	text-align: center;
@@ -905,11 +905,20 @@ body {
 
 .service-grand__img {
 	margin: 0 auto;
+	padding-bottom: 30px !important;
 }
 
 .service-grand__text {
 	color: #fff !important;
+	display: block !important;
 	font-size: 25px !important;
+	opacity: 1 !important;
+	// padding-top: 25px !important;
+	// &:hover {
+	// 	transition: 0.4s !important;
+	// 	padding-bottom: 15px !important;
+	// 	opacity: 1 !important;
+	// }
 }
 
 .maine-news-tab__img {
@@ -1182,4 +1191,30 @@ body {
 .stat-three-tab {
 	width: 20% !important;
 	margin: 0 0 !important;
+}
+
+.hover-grand {
+	opacity: 0.5 !important;
+	transition: 0.4s;
+		&:hover {
+			opacity: 1 !important;
+			transition: 0.4s;
+		}
+}
+
+.atlas-acard {
+	padding-top: 40px !important;
+	background-color: #005AC8 !important;
+	border-radius: 20px;
+}
+
+.tuch-gallery {
+	a {
+		width: 33% !important;
+		&:after {
+			content: "2222";
+			
+		}
+	}
+
 }
