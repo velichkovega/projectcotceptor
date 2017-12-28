@@ -268,9 +268,9 @@ $('.js-datepicker').daterangepicker({
     console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
 });
 
-$('.news-slider-init').click(() => {
+$('.news-slider-init, .atlas-init').click(() => {
 	setTimeout(() => {
-		$('slick-slider-socntiner__news').addClass('active');
+		$('.slick-slider-socntiner__news').addClass('active');
 
 		$('.slick-slider-socntiner__news').slick({
 			dots: false,
@@ -311,7 +311,7 @@ $('.news-slider-init').click(() => {
 				// instead of a settings object
 			]
 		});
-	},0)
+	},4000)
 
 });
 

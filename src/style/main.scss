@@ -1075,6 +1075,7 @@ body {
 
 .slick-slider-socntiner__news-item {
 	width: 300px;
+	margin: 0 -20px;	
 	img {
 		width: 100%;
 	}
@@ -1227,4 +1228,8 @@ body {
 	font-family: "BPG Nino Mtavruli";
 	background-image: url(../img/background.png) !important;
 	background-repeat: repeat;
+}
+
+.slick-slide {
+	padding: 0 20px;
 }
