@@ -50,8 +50,8 @@ $('.tabs__content-top--slider').click(() => {
 			centerMode: true,
 			slidesToScroll: 1,
 			draggable: true,
-			prevArrow: '<img src="../img/chevron-left.png">',
-  			nextArrow: '<img src="../img/chevron-right.png">',
+			prevArrow: '<img src="/img/chevron-left.png">',
+  			nextArrow: '<img src="/img/chevron-right.png">',
 			responsive: [
 				{
 					breakpoint: 1024,
@@ -179,8 +179,8 @@ $('.about-1__slik').slick({
     centerMode: true,
     slidesToScroll: 1,
     draggable: true,
-    prevArrow: '<img src="../img/chevron-left.png">',
-    nextArrow: '<img src="../img/chevron-right.png">',
+    prevArrow: '<img src="/img/chevron-left.png">',
+    nextArrow: '<img src="/img/chevron-right.png">',
     responsive: [
         {
             breakpoint: 1024,
@@ -218,8 +218,8 @@ $('.slick-slider-main').slick({
     centerMode: true,
     slidesToScroll: 1,
     draggable: true,
-    prevArrow: '<img src="../img/chevron-left.png">',
-    nextArrow: '<img src="../img/chevron-right.png">',
+    prevArrow: '<img src="/img/chevron-left.png">',
+    nextArrow: '<img src="/img/chevron-right.png">',
     responsive: [
         {
             breakpoint: 1024,
