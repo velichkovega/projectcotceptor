@@ -316,7 +316,7 @@ $(function(){
                 left: '-385px'
             }, 200);
             $('.modal-overlay').removeClass('active-hiden-menu');
-            $('.body').animate({ 
+            $('.body, .body-main').animate({ 
                 left: '0px' 
             }, 200);
         });
@@ -326,7 +326,7 @@ $(function(){
                 left: '0px'
             }, 200);
             $('.modal-overlay').addClass('active-hiden-menu');
-            $('.body').animate({ 
+            $('.body, .body-main').animate({ 
                 left: '185px' 
             }, 200);
 
