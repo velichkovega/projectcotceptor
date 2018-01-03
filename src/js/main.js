@@ -353,7 +353,7 @@ $(function(){
 
     $(document).on('click','.close__munu-slick',function(){
         $('.fix').animate({
-            height: '46px'
+            height: '1px'
         },200);
         $('#mediator-slik-main').removeClass('close__munu-slick');
         $('#mediator-menu__wrap').addClass('close__mediator-menu');
