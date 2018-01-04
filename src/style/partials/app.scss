@@ -38,7 +38,7 @@ body {
     // background: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 600px;
+    height: 900px;
     padding: 40px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -60,9 +60,16 @@ body {
 }
 
 .navigation-menu__icons {
+    margin-right: 40px;
     span {
         padding: 0 10px;
         cursor: pointer;
+        
+        img {
+            max-width: 70px;
+            height: 30px;
+            filter: brightness(0) invert(1);
+        }
     }
 }
 
@@ -137,7 +144,7 @@ body {
 .page__col--container {
     width: 100%;
     padding: 15px 0 20px 0;
-        background: linear-gradient(to right, rgba(42,72,208,0.77) 0%, rgba(67,109,250,1) 100%);
+        // background: linear-gradient(to right, rgba(42,72,208,0.77) 0%, rgba(67,109,250,1) 100%);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -306,10 +313,12 @@ body {
 }
 
 .background-slik-main {
-
-    background: linear-gradient(to right, rgba(42,72,208,1) 0%, rgba(67,109,250,1) 100%);
+    background-image: url(../img/shape-1-copy-4.png);
+    background-size: cover;
+    // background: linear-gradient(to right, rgba(42,72,208,1) 0%, rgba(67,109,250,1) 100%);
     position: relative;
     padding-top: 5%;
+    background-position: top, center;
 }
 
 .button-down__img {
@@ -396,7 +405,7 @@ body {
 .img__header-main {
     position: absolute;
     bottom: 0;
-    height: 30%;
+    height: 300px;
     z-index: 1;
     img {
         width: 100%;
@@ -479,7 +488,7 @@ body {
 
 #fix-mediator-menu {
     height: 1px;
-    background: linear-gradient(to right, rgba(42,72,208,1) 0%, rgba(67,109,250,1) 100%);
+    background: linear-gradient(to right, rgba(0,86,190,1) 0%, rgba(0,110,245,1) 100%);
 }
 
 .close__munu-slick {
@@ -663,7 +672,7 @@ body {
     }
 } 
 
-@media (min-width: 1440px) {
+@media (min-width: 1258px) {
     .social__footer {
         width: 288px;
     }
@@ -688,4 +697,8 @@ body {
 .button-slider-under {
     background: linear-gradient(to right, rgba(42,72,208,1) 0%, rgba(67,109,250,1) 100%);
     padding-bottom: 20px;
+}
+
+.menu__burger__img {
+    height: 43px;
 }
