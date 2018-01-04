@@ -218,8 +218,8 @@ $('.slick-slider-main').slick({
     centerMode: true,
     slidesToScroll: 1,
     draggable: true,
-    prevArrow: '<img src="img/chevron-left.png">',
-    nextArrow: '<img src="img/chevron-right.png">',
+    prevArrow: '<img src="img/left-mediator.png">',
+    nextArrow: '<img src="img/medator-right.png">',
     responsive: [
         {
             breakpoint: 1024,
@@ -270,7 +270,7 @@ $('.news-slider-init, .atlas-init').click(() => {
 			dots: false,
 			infinite: true,
 			speed: 300,
-			slidesToShow: 3,
+			slidesToShow: 4,
 			centerMode: true,
 			slidesToScroll: 1,
 			draggable: true,
