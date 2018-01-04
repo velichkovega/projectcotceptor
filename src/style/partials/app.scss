@@ -120,8 +120,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 280px;
-    height: 50px;
+    width: 256px;
+    height: 66px;
     font-size: 27px;
     color: #fff;
     background-color: #0a66d8;
@@ -129,21 +129,25 @@ body {
     text-align: center;
     transition: 0.4s;
     cursor: pointer;
-    margin: 40px 0;
-    &:hover {
-        box-shadow: 0px 0px 45px -1px rgba(0,0,0,0.6);
-    }
+    margin: 60px 0;
+    margin-left: 63px;
+    box-shadow: -5px 8px 50px -3px rgba(0, 0, 0, 0.6)
 }
 
 .page__col--container {
     width: 100%;
-    padding: 15px 5% 20px 5%;
-    background-color: #516BB2;
+    padding: 15px 0 20px 0;
+        background: linear-gradient(to right, rgba(42,72,208,0.77) 0%, rgba(67,109,250,1) 100%);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     @media (max-width: 425px) {
         padding: 20px 20px;
+    }
+
+    @media (min-width: 1440px) {
+        width: 1365px;
+        margin: 0 auto;
     }
 }
 
@@ -171,7 +175,7 @@ body {
 }
 
 .main-page__title {
-    width: 33.33%;
+    width: 395px;
     padding: 0 5px;
     @media (max-width: 768px) {
         width: 50%;
@@ -185,7 +189,7 @@ body {
 .main-page__col {
     display: flex;
     justify-content: space-between;
-    padding: 9px 60px;
+    padding: 9px 8px;
     transition: 0.4s;
     cursor: pointer;
     &:hover {
@@ -197,11 +201,12 @@ body {
 
 .buttonton-seven {
     width: 30%;
-    margin: 10px auto;
+    margin: auto;
+    margin-top: 10px;
     color: #fff;
     font-size: 14px;
     border-radius: 40px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: #7293FC;
     text-align: center;
     transition: 0.4s;
     display: flex;
@@ -245,7 +250,7 @@ body {
     background-color: #000;
     position: relative;
     border-radius: 20px;
-
+    box-shadow: 0px 7px 37px -7px rgba(0,0,0,0.57);
     img {
         width: 100%;
         height: auto;
@@ -272,14 +277,18 @@ body {
 }
 
 .bottom-buttom_main-content {
-    margin: 20px auto;
+    margin: 69px auto;
 }
 
 .bottom-buttom__span {
     margin: 0 auto;
-    border: 1px solid #0a66d8;
+    border: 2px solid #0a66d8;
     background-color: #fff;
     color: #0a66d8;
+    width: 289px !important;
+    height: 60px !important;
+    font-weight: 600;
+    box-shadow: none;
 }
 
 .slik-main__img {
@@ -298,7 +307,7 @@ body {
 
 .background-slik-main {
 
-    background-color: #516BB2;
+    background: linear-gradient(to right, rgba(42,72,208,1) 0%, rgba(67,109,250,1) 100%);
     position: relative;
     padding-top: 5%;
 }
@@ -420,6 +429,7 @@ body {
 }
 
 .hiden-menu {
+    width: 100%;
     li {
         &:first-child {
             border-top: 1px solid #3A865A;
@@ -445,9 +455,10 @@ body {
     // padding-right: 10%;
     height: 100%;
     z-index: 105;
+    width: 285px;
     ul {
         margin-top: 25px;
-        width: 185px;
+        width: 100%;
         text-align: center;
         li {
             padding: 15px 0;
@@ -468,7 +479,7 @@ body {
 
 #fix-mediator-menu {
     height: 1px;
-    background-color: #516BB2;
+    background: linear-gradient(to right, rgba(42,72,208,1) 0%, rgba(67,109,250,1) 100%);
 }
 
 .close__munu-slick {
@@ -538,6 +549,7 @@ body {
     bottom: 0;
     right: 0;
     height: 50%;
+    padding-top: 23px;
     @media(max-width: 1024px) {
         width: 50%;
         height: 60%;
@@ -569,7 +581,9 @@ body {
     position: absolute;
     top: 0;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 45px;
+    box-shadow: 0px 0px 25px -6px rgba(0,0,0,0.75);
+    border-radius: 20px;
 }
 
 @media (max-width: 425px) {
@@ -613,9 +627,6 @@ body {
         padding: 7px;
     }
 
-    #fix-mediator-menu, .background-slik-main {
-        background: none;
-    }
 
     .footer-container-main {
         flex-direction: column;
@@ -632,7 +643,7 @@ body {
     }
 
     .button-slider__main {
-        margin-top: 0;
+        margin-top: 5px;
         span {
             font-size: 16px;
         }
@@ -652,6 +663,12 @@ body {
     }
 } 
 
+@media (min-width: 1440px) {
+    .social__footer {
+        width: 288px;
+    }
+}
+
 @media (max-width: 320px) {
     .main-page__col {
         padding: 9px 0;
@@ -666,4 +683,9 @@ body {
     .copyright {
         display: none;
     }
+}
+
+.button-slider-under {
+    background: linear-gradient(to right, rgba(42,72,208,1) 0%, rgba(67,109,250,1) 100%);
+    padding-bottom: 20px;
 }

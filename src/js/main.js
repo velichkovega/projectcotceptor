@@ -327,7 +327,7 @@ $(function(){
             }, 200);
             $('.modal-overlay').addClass('active-hiden-menu');
             $('.body, .body-main').animate({ 
-                left: '185px' 
+                left: '285px' 
             }, 200);
 
         });

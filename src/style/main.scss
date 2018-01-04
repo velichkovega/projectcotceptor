@@ -328,7 +328,15 @@ body {
 
 #flex {
 	display: flex;
-	height: 100vh;
+	height: 95vh;
+	width: 85%;
+	@media (max-width: 768px) {
+		width: 95%;
+	}
+	
+	@media (min-height: 1024px) {
+		height: 80vh;
+	}
 }
 
 .first-tab {
@@ -1243,5 +1251,5 @@ body {
 }
 
 .tabs .vertical {
-	height: 100vh !important;
+	height: 95vh !important;
 }

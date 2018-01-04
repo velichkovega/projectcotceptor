@@ -888,7 +888,7 @@ a:hover, a:focus {
 }
 
 .main {
-	max-width: 69em;
+	/*max-width: 69em;*/
 	margin: 0 auto;
 }
 
