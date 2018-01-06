@@ -418,8 +418,8 @@ body {
 }
 
 .social__footer {
-    margin-bottom: 44px;
-    margin-left: 146px;
+    margin-bottom: 67px !important;
+    margin-left: 143px !important;
     display: flex;
     justify-content: center;
     width: 38%;
@@ -433,6 +433,7 @@ body {
 
 .social__footer__img {
     margin: 15px;
+    margin-bottom: 1px;
     width: 63px;
     img {
         width: 100%;
