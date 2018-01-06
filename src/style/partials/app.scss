@@ -418,6 +418,8 @@ body {
 }
 
 .social__footer {
+    margin-bottom: 44px;
+    margin-left: 146px;
     display: flex;
     justify-content: center;
     width: 38%;
@@ -430,8 +432,8 @@ body {
 }
 
 .social__footer__img {
-    margin: 27px;
-    width: 40px;
+    margin: 15px;
+    width: 63px;
     img {
         width: 100%;
         &:hover {
@@ -443,6 +445,7 @@ body {
 .footer__img {
     position: relative;
     width: 100%;
+    margin-top: -6px;
     img {
         width: 100%;
         height: auto;
