@@ -214,7 +214,7 @@ $('.slick-slider-main').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 4,
     centerMode: true,
     slidesToScroll: 1,
     draggable: true,
