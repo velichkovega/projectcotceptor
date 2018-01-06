@@ -219,11 +219,11 @@ body {
     padding: 12.5px 2px;
     transition: 0.4s;
     cursor: pointer;
-    &:hover {
-        background-color: #0a66d8;
-        border-radius: 25px;
-        transition: 0.4s;
-    }
+    // &:hover {
+    //     background-color: #0a66d8;
+    //     border-radius: 25px;
+    //     transition: 0.4s;
+    // }
 }
 
 .buttonton-seven {
@@ -335,7 +335,7 @@ body {
     background-color: #fff !important;
     background: none;
     color: #0a66d8;
-    width: 279px !important;
+    width: 294px !important;
     height: 66px !important;
     font-weight: 700;
     box-shadow: none;
@@ -372,6 +372,7 @@ body {
     align-items: center;
     img {
         width: 87px;
+        margin-left: 38px;
         cursor: pointer;
     }
 }
@@ -379,7 +380,7 @@ body {
 .button-down__slik {
     position: absolute;
     bottom: 0;
-    margin-bottom: -50px;
+    margin-bottom: -58px;
     left: 0;
     right: 0;
     z-index: 99;
@@ -457,9 +458,9 @@ body {
 .img__header-main {
     position: absolute;
     bottom: 0;
-    height: 539px;
+    height: 799px;
     z-index: 0;
-    margin-bottom: -258px;
+    margin-bottom: -450px;
     img {
         width: 100%;
         height: 100%;
@@ -599,11 +600,15 @@ body {
         cursor: pointer;
     }
     img {
-        width: 40px;
-        height: 40px;
+        width: 111px;
+        height: 111px;
         opacity: 0;
         align-self: center;
     }
+}
+
+.button-seven__text {
+    font-size: 18px;
 }
 
 .copyright {
@@ -751,8 +756,9 @@ body {
 }
 
 .button-slider-under {
-    background: linear-gradient(to right, rgba(42,72,208,1) 0%, rgba(67,109,250,1) 100%);
+    background: linear-gradient(to right, rgba(42,73,208,1) 0%,rgba(67,111,250,1) 100%);
     padding-bottom: 20px;
+    background: none !important;
 }
 
 .menu__burger__img {
@@ -815,4 +821,27 @@ body {
 
 .slick-arrow {
     height: 42px;
+}
+
+.footer-margin__top {
+    margin-top: -25px;
+}
+
+.mediator-corner {
+    background-position: center;
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    margin-top: -98px;
+    font-size: 25px;
+    padding-left: 14px;
+    background-image: url(../img/corner.png);
+    background-repeat: no-repeat;
+    width: 55%;
+    background-size: cover;
+    height: 100px;
+    border-radius: 0 0 0 20px;
+    p {
+        margin-top: 43px;
+    }
 }
