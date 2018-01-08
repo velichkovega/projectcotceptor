@@ -903,3 +903,9 @@ body {
 .position-absolute__img-news {
     border: none !important;
 }
+
+@media (min-width: 1367px) {
+    .button-seven__text {
+        font-size: 24px;
+    }
+}

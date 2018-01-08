@@ -859,6 +859,7 @@ body {
 .about-1__slik {
 	text-align: center;
 	display: flex;
+	align-items: center;
 	p {
 		color: #fff;
 		font-size: 22px;
@@ -1265,5 +1266,6 @@ body {
 @media screen and (min-width: 2100px) {
 	.grid__item {
 		width: 21.66% !important;
+		min-height: 243px !important; 
 	}
 }
