@@ -300,8 +300,8 @@ body {
 	}
 
 	img {
-		width: 42px;
-		height: 42px;
+		width: 38px;
+		height: 38px;
 	}
 }
 
@@ -1253,4 +1253,17 @@ body {
 
 .tabs .vertical {
 	height: 95vh !important;
+}
+
+
+.item-corner {
+	left: 0 !important;
+	bottom: 0 !important;
+	border-radius: 0 0 0 8px !important;
+}
+
+@media screen and (min-width: 2100px) {
+	.grid__item {
+		width: 21.66% !important;
+	}
 }

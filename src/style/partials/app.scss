@@ -281,7 +281,6 @@ body {
 .main-content__item {
     width: 33.33%;
     padding: 25px 25px;
-    height: 377px;
     @media (max-width: 768px) {
         width: 50%
     }
@@ -291,11 +290,16 @@ body {
 }
 
 .hover__img-main-content {
-    background-color: #000;
+    // background-color: #000;
     position: relative;
-    border-radius: 20px;
+    border-radius: 47px;
     box-shadow: 0px 7px 37px -7px rgba(0,0,0,0.57);
     height: 100%;
+    transition: 0.4s;
+    &:hover {
+        transition: 0.4s;
+        background-color: #000;
+    }
     img {
         width: 100%;
         height: auto;
@@ -345,6 +349,7 @@ body {
     img {
         width: 100%;
         height: 100%;
+        max-width: 300px;
     }
 }
 
@@ -894,3 +899,7 @@ body {
             margin-bottom: 181px;
         }        
     }
+    
+.position-absolute__img-news {
+    border: none !important;
+}
