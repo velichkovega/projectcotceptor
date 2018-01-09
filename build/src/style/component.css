@@ -930,7 +930,7 @@ button {
 }
 
 button:hover {
-	background: #2c774b;
+	/* background: #2c774b; */
 }
 
 .info {
