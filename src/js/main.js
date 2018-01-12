@@ -368,3 +368,12 @@ $(function(){
 //         $('#filtr__init-prohect').addClass('block__project-filtr');
 //     })
 // })
+
+$('.slider-main').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows: false,
+  });

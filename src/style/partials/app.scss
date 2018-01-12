@@ -18,6 +18,30 @@ body {
 
 }
 
+.slick-slide {
+    padding: 0 !important;
+}
+
+.slick-next {
+    position: absolute;
+    z-index: 999999;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-prev {
+    position: absolute;
+    /* display: inline-block; */
+    z-index: 9999;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.button {
+    background-image: url(../img/left-mediator.png) !important;
+}
+
 .container-main-page {
     position: relative;
     margin: 0 auto;
@@ -38,8 +62,8 @@ body {
     // background: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 978px;
-    padding: 40px 0 0 0;
+    height: 685px;
+    padding: 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,9 +71,11 @@ body {
 }
 
 .main__navigation-menu {
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 .navigation-menu__burger {
@@ -75,6 +101,7 @@ body {
 }
 
 .buttons-plays {
+    display: none;
     padding: 0 41px;
     display: flex;
     justify-content: space-between;
@@ -345,7 +372,7 @@ body {
 }
 
 .slik-main__img {
-    padding: 40px;
+    padding: 52px;
     img {
         width: 100%;
         height: 100%;
@@ -463,7 +490,7 @@ body {
     position: absolute;
     bottom: 0;
     height: 799px;
-    z-index: 0;
+    z-index: 1;
     margin-bottom: -450px;
     img {
         width: 100%;
@@ -763,6 +790,7 @@ body {
     // background: linear-gradient(to right, rgba(42,73,208,1) 0%,rgba(67,111,250,1) 100%);
     padding-bottom: 20px;
     background: none !important;
+    z-index: 5;
 }
 
 .menu__burger__img {
@@ -845,9 +873,9 @@ body {
     background-size: cover;
     height: 100px;
     border-radius: 0 0 0 20px;
-    p {
-        margin-top: 43px;
-    }
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
     @media(max-width: 1024px) {
@@ -907,5 +935,24 @@ body {
 @media (min-width: 1367px) {
     .button-seven__text {
         font-size: 24px;
+    }
+}
+
+.slider-main__wrap {
+    position: absolute;
+    width: 100%;
+}
+
+.slider-main {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-main__item-img {
+    // width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 550px;
     }
 }
