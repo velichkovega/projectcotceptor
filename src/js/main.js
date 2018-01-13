@@ -51,7 +51,8 @@ $('.tabs__content-top--slider').click(() => {
 			slidesToScroll: 1,
 			draggable: true,
 			prevArrow: '<img src="img/chevron-left.png">',
-  			nextArrow: '<img src="img/chevron-right.png">',
+              nextArrow: '<img src="img/chevron-right.png">',
+              dots: false,
 			responsive: [
 				{
 					breakpoint: 1024,
@@ -59,7 +60,7 @@ $('.tabs__content-top--slider').click(() => {
 						slidesToShow: 1,
 						slidesToScroll: 1,
 						infinite: true,
-						dots: true
+						dots: false
 					}
 				},
 				{
@@ -81,7 +82,7 @@ $('.tabs__content-top--slider').click(() => {
 				// instead of a settings object
 			]
 		});
-	},0)
+	},500)
 
 });
 
@@ -255,7 +256,7 @@ $('.js-filter').select2({
 });
 
 
-$('.js-datepicker').daterangepicker({
+$(document).find('.js-datepickers').daterangepicker({
     "singleDatePicker": true,
     "autoUpdateInput": false
 }, function(start, end, label) {

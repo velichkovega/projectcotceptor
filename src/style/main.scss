@@ -1234,9 +1234,9 @@ body {
 }
 
 
-.daterangepicker {
-	display: none !important;
-}
+// .daterangepicker {
+// 	display: none !important;
+// }
 
 .bakcground-html__tab {
 	font-family: "BPG Nino Mtavruli";
@@ -1268,5 +1268,11 @@ body {
 	.grid__item {
 		width: 21.66% !important;
 		min-height: 243px !important; 
+	}
+}
+
+body {
+	.daterangepicker  {
+		display: none;
 	}
 }
