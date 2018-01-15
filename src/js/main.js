@@ -100,7 +100,54 @@ var topIniter = document.querySelector('.animation-open-block');
 // console.log(animationCustomModule);
 
 
+$('.slider-stat').click(() => {
+	setTimeout(() => {
+		$('.main-content__tab-slider-stat').addClass('active');
 
+		$('.main-content__tab-slider-stat').slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			centerMode: true,
+			slidesToScroll: 1,
+			draggable: true,
+			prevArrow: '<img src="img/chevron-left.png">',
+              nextArrow: '<img src="img/chevron-right.png">',
+              dots: false,
+              adaptiveHeight: true,
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: false
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+				// You can unslick at a given breakpoint now by adding:
+				// settings: "unslick"
+				// instead of a settings object
+			]
+		});
+	},500)
+
+});
 
 
 
@@ -376,5 +423,8 @@ $('.slider-main').slick({
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true,
-    arrows: false,
+    arrows: true,
+    draggable: true,
+    prevArrow: '<img src="img/left-mediator.png">',
+    nextArrow: '<img src="img/medator-right.png">'
   });
