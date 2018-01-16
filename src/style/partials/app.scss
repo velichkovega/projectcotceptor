@@ -829,6 +829,7 @@ body {
 }
 
 .main-calendar {
+    width: 99px;
     position: absolute;
     z-index: 99999;
     right: 0;
@@ -838,6 +839,7 @@ body {
 }
 
 .calendar__img {
+    margin: 0 auto;
     border-radius: 10px;
     position: relative;
     display: flex;
@@ -864,6 +866,7 @@ body {
 }
 
 .text-calendar {
+    text-align: center;
     color: #fff;
 }
 

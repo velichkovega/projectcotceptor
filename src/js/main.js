@@ -428,3 +428,13 @@ $('.slider-main').slick({
     prevArrow: '<img src="img/left-mediator.png">',
     nextArrow: '<img src="img/medator-right.png">'
   });
+
+  $('.main-calendar--slik-cal').slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000
+  });
