@@ -438,3 +438,12 @@ $('.slider-main').slick({
     autoplay: true,
     autoplaySpeed: 2000
   });
+
+  var widthAgreed = $('.grid__item').width();
+  var hui = $(".tabs__caption").children("li").height() + 15;
+
+$( document ).ready(function() {
+    $('.grid__item').css("height", widthAgreed);
+    $(".tabs__caption").children("li").css("width", hui);
+
+});

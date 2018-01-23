@@ -116,7 +116,7 @@ body {
 	align-self: flex-end;
 	box-shadow: -7px -7px 44px 2px rgba(0,0,0,0.35);
 	border-radius: 20px 0 0 20px;
-	width: 14%;
+	width: auto;
 }
 
 .tabs__caption-top {
@@ -329,7 +329,7 @@ body {
 
 #flex {
 	display: flex;
-	height: 95vh;
+	height: 91vh;
 	width: 85%;
 	@media (max-width: 768px) {
 		width: 95%;
@@ -1267,7 +1267,7 @@ body {
 
 .tabs-burger {
 	position: absolute !important;
-	padding-top: 20px;
+	padding: 7vh 10vh;
 }
 
 .tabs .vertical {
@@ -1296,4 +1296,9 @@ body {
 
 .tabs__content {
 	margin-left: -4px;
+}
+
+.slick-track {
+	display: flex;
+	align-items: center;
 }
