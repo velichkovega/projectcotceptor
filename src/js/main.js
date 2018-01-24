@@ -446,4 +446,31 @@ $( document ).ready(function() {
     $('.grid__item').css("height", widthAgreed);
     $(".tabs__caption").children("li").css("width", hui);
 
+    $(document).on('click','.js-toggle-person-info', function(e) {
+        var personInfo = $('.person-info');
+        if (!personInfo.hasClass('active')) {
+            personInfo.addClass('active');
+        } else {
+            personInfo.removeClass('active');
+        }
+    });
+
+    $(document).click(function (e) {
+        var clickedItem = $(e.target);
+        var personInfo = $('.person-info');
+        console.log(clickedItem.is('.person-info') || clickedItem.parents().is('.person-info') || clickedItem.is('.js-toggle-person-info'));
+        if (clickedItem.is('.person-info') ||
+            clickedItem.parents().is('.person-info') ||
+            clickedItem.is('.js-toggle-person-info') ||
+            clickedItem.parents().is('.js-toggle-person-info')
+        ) {
+            personInfo.addClass('active');
+        } else {
+            personInfo.removeClass('active');
+        }
+
+
+    });
+
 });
+

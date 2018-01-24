@@ -1311,3 +1311,39 @@ body {
 .tabs__caption {
 	font-size: 11px;
 }
+
+.js-toggle-person-info {
+	position: relative;
+}
+
+.person-info {
+	width:185px;
+	height: 130px;
+	background: #ffffff;
+	padding: 20px;
+	position: absolute;
+	border-radius: 20px;
+	box-shadow: 0px 18px 51px -16px rgba(0, 0, 0, 0.55);
+	left: 50%;
+	top: -1000px;
+	transition: top .3s;
+	transform: translateX(-50%);
+	cursor: auto;
+
+	&.active {
+		top: 40px;
+	}
+
+	.main-button--content, .main-button.slik__button-top {
+		width: 145px;
+		height: 40px;
+		font-size: 12px;
+		margin: 0;
+
+		&:first-child {
+			margin-bottom: 10px;
+		}
+
+	}
+
+}
