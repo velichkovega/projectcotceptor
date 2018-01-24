@@ -464,6 +464,7 @@ $( document ).ready(function() {
             clickedItem.is('.js-toggle-person-info') ||
             clickedItem.parents().is('.js-toggle-person-info')
         ) {
+            // если надо будет прятать эту херню при нажатии на кнопку просто убери строку ниже
             personInfo.addClass('active');
         } else {
             personInfo.removeClass('active');
