@@ -1024,3 +1024,22 @@ body {
     opacity: 0;
     margin-top: 55%;
 }
+
+.main-calendar--slik-cal {
+    overflow: hidden;
+}
+
+.href-login {
+    box-shadow: none !important;
+    background: none !important;
+    &:hover {
+        background: linear-gradient(to right, #015ed0 0%, #2988fe 100%) !important;
+        transition: 0.4s;
+        a {
+            color: #fff !important;
+        }
+    }
+    a {
+        color: #6C9EEB !important;
+    }
+}
