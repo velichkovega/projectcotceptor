@@ -18,8 +18,9 @@
 
 (function($){
     $(window).on("load",function(){
-        $(".tabs__content-top").mCustomScrollbar({
-            mouseWheel:{ enable: true }
+        $(".tabs__content-top:not(.no-sckroll__active)").mCustomScrollbar({
+            mouseWheel:{ enable: true },
+            alwaysShowScrollbar: 1
         });
     });
 })(jQuery);
@@ -446,15 +447,7 @@ $( document ).ready(function() {
     $('.grid__item').css("height", widthAgreed);
     $(".tabs__caption").children("li").css("width", hui);
 
-    $(document).on('click','.js-toggle-person-info', function(e) {
-        var personInfo = $('.person-info');
-        if (!personInfo.hasClass('active')) {
-            personInfo.addClass('active');
-        } else {
-            personInfo.removeClass('active');
-        }
-    });
-
+    
     $(document).click(function (e) {
         var clickedItem = $(e.target);
         var personInfo = $('.person-info');
@@ -465,12 +458,24 @@ $( document ).ready(function() {
             clickedItem.parents().is('.js-toggle-person-info')
         ) {
             // если надо будет прятать эту херню при нажатии на кнопку просто убери строку ниже
+            return false;
+        } else {
+            personInfo.removeClass('active');
+        }
+        if (!personInfo.is(e.target) && personInfo.has(e.target).length === 0) {
+            container.hide();
+        }
+
+
+    });
+
+    $(document).on('click','.js-toggle-person-info', function(e) {
+        var personInfo = $('.person-info');
+        if (!personInfo.hasClass('active')) {
             personInfo.addClass('active');
         } else {
             personInfo.removeClass('active');
         }
-
-
     });
 
 });
