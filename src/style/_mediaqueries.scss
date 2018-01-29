@@ -96,8 +96,8 @@ $viewport_xxl: 	$item_width * 6 + $sidebar_width; /* 6 columns */
 @media screen and (min-width: $viewport_m) {
 	/* 3 columns */
 	.grid__item {
-		width: 32%;
-		margin: 9px 6px;
+		width: 31%;
+		margin: 10px 9px;
 	}
 }
 

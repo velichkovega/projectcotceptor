@@ -420,9 +420,10 @@ body {
 }
 
 .og-grid li {
-	width: 33%;
+	margin: 18px 10px;
+	margin-top: 15px;
+    width: 31%;
 	box-sizing: border-box;
-	margin: 12px 0 31px 0 !important;
 }
 .og-expander {
 	border-radius: 24px;
@@ -548,7 +549,7 @@ body {
 .content-part__item {
 	border-radius: 20px;
 	box-sizing: border-box;
-	padding: 8px 5px;
+	padding: 1%;
 	width: 33%;
 	height: auto;
 	text-align: center;
@@ -823,6 +824,7 @@ body {
 .part-item__container--opasity-part {
 	opacity: 0.5;
 	transition: 0.4s;
+	border-radius: 19px;
 	&:hover {
 		opacity: 1;
 		transition: 0.4s;
@@ -832,7 +834,7 @@ body {
 
 .part-sec-mod {
 	padding-top: 0;
-	padding-left: 1%;
+	// padding-left: 1%;
 }
 
 // .part-item-margin {
@@ -912,9 +914,10 @@ body {
 }
 
 .touchtouch__img {
+	border-radius: 22px;
 	width: 33%;
 	height: auto;
-	padding: 7px 4px;
+	padding: 0.9%;
 	opacity: 0.5;
 	transition: 0.4s;
 	&:before {
@@ -1354,4 +1357,8 @@ body {
 
 .tabs__content-stat {
 	height: 87% !important;
+}
+
+.part-padding__top {
+	padding-top: 12px;
 }
