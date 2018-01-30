@@ -420,13 +420,10 @@ body {
 }
 
 .og-grid li {
-	margin: 18px 10px;
+	margin: 6px 10px;
 	margin-top: 15px;
     width: 31%;
 	box-sizing: border-box;
-	@media (min-width: 1500px) {
-		margin: 3% 10px;
-	}
 }
 .og-expander {
 	border-radius: 24px;
@@ -1366,5 +1363,29 @@ body {
 	padding-top: 12px;
 }
 
-@media (min-width: 1500px) {
+.part-sec__coub {
+	border-radius: 10px;
+}
+
+.stat-sec__coub {
+	border-radius: 12px;
+}
+
+.touchtouch__img__sec {
+	border-radius: 22px;
+	width: 33%;
+	height: auto;
+	padding: 0.9%;
+	opacity: 0.5;
+	transition: 0.4s;
+	&:before {
+		content: "text text text";
+		color: #000;
+		font-size: 22px;
+		display: inline-block;
+	}
+	&:hover {
+		opacity: 1;
+		transition: 0.4s;
+	}
 }

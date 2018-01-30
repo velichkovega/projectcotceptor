@@ -54,6 +54,8 @@ $('.tabs__content-top--slider').click(() => {
 			prevArrow: '<img src="img/chevron-left.png">',
               nextArrow: '<img src="img/chevron-right.png">',
               dots: false,
+              autoplay: true,
+              autoplaySpeed: 2000,
 			responsive: [
 				{
 					breakpoint: 1024,
@@ -117,6 +119,8 @@ $('.slider-stat').click(() => {
               nextArrow: '<img src="img/chevron-right.png">',
               dots: false,
               adaptiveHeight: true,
+              autoplay: true,
+              autoplaySpeed: 2000,
 			responsive: [
 				{
 					breakpoint: 1024,
@@ -442,10 +446,12 @@ $('.slider-main').slick({
 
   var widthAgreed = $('.grid__item').width();
   var hui = $(".tabs__caption").children("li").height() + 15;
+ 
 
 $( document ).ready(function() {
     $('.grid__item').css("height", widthAgreed);
     $(".tabs__caption").children("li").css("width", hui);
+    // $(".content-part__item").css("height", partSlide);
 
     
     $(document).click(function (e) {
@@ -480,3 +486,51 @@ $( document ).ready(function() {
 
 });
 
+
+$('.part__coub').click(() => {
+	setTimeout(() => {
+        var partSlide = $(".content-part__item").width();
+        $(".part-item__container--opasity-part").css("height", partSlide);
+	},1)
+
+});
+
+$('.galery__coub').click(() => {
+	setTimeout(() => {
+        var gallerySlide = $(".touchtouch__img").width() + 17;
+        $(".touchtouch__img").css("height", gallerySlide);
+	},1)
+
+});
+
+$('.secondOpenModal').click(() => {
+	setTimeout(() => {
+        var partSecCoub = $(".part-sec__coub").width();
+        $(".part-sec__coub").css("height", partSecCoub);
+	},1)
+
+});
+
+$('.coubInitStat').click(() => {
+	setTimeout(() => {
+        var statCoubSec = $(".stat-sec__coub").width();
+        $(".stat-sec__coub").css("height", statCoubSec);
+	},1)
+
+});
+
+$('.gallery-coub__sec').click(() => {
+	setTimeout(() => {
+        var statCoubGallary = $(".touchtouch__img__sec").width() + 17;
+        $(".touchtouch__img__sec").css("height", statCoubGallary);
+	},1)
+
+});
+
+$('.main__news-init').click(() => {
+	setTimeout(() => {
+        var mainNews = $(".position-reletive__grid-item").width() + 11;
+        $(".position-reletive__grid-item").css("height", mainNews);
+	},1)
+
+});
