@@ -16,14 +16,30 @@
 //= partials/script.js
 
 
+
+
 (function($){
     $(window).on("load",function(){
         $(".tabs__content-top:not(.no-sckroll__active)").mCustomScrollbar({
             mouseWheel:{ enable: true },
             alwaysShowScrollbar: 1
         });
+        // $(".slider-git__preload").removeClass(slider-git__preload);
     });
 })(jQuery);
+
+$('.slider-main').slick({
+    lazyLoad: 'progressive',
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows: true,
+    draggable: true,
+    prevArrow: '<img src="img/left-mediator.png">',
+    nextArrow: '<img src="img/medator-right.png">'
+    });
 
 $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
 	$(this)
@@ -421,19 +437,6 @@ $(function(){
 //         $('#filtr__init-prohect').addClass('block__project-filtr');
 //     })
 // })
-
-$('.slider-main').slick({
-    lazyLoad: 'ondemand',
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    arrows: true,
-    draggable: true,
-    prevArrow: '<img src="img/left-mediator.png">',
-    nextArrow: '<img src="img/medator-right.png">'
-  });
 
   $('.main-calendar--slik-cal').slick({
     lazyLoad: 'ondemand',
