@@ -423,6 +423,7 @@ $(function(){
 // })
 
 $('.slider-main').slick({
+    lazyLoad: 'ondemand',
     dots: false,
     infinite: true,
     speed: 300,
@@ -435,6 +436,7 @@ $('.slider-main').slick({
   });
 
   $('.main-calendar--slik-cal').slick({
+    lazyLoad: 'ondemand',
     dots: false,
     infinite: false,
     speed: 300,
