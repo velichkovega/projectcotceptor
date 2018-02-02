@@ -984,3 +984,9 @@ button:hover {
 	}
 
 }
+
+@media (max-width: 1200px) {
+	.og-grid li {
+		width: 47%;
+	}
+}

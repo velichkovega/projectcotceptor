@@ -316,11 +316,16 @@ body {
 .main-content__item {
     width: 33.33%;
     padding: 25px 25px;
-    @media (max-width: 768px) {
+    @media (max-width: 1300px) {
         width: 50%
     }
-    @media (max-width: 425px) {
+    @media (max-width: 925px) {
         width: 90%;
+        margin: auto;
+    }
+    @media (max-width: 529px) {
+        width: 100%;
+        padding: 10px;
     }
 }
 
@@ -899,6 +904,11 @@ body {
     align-items: center;
     flex-wrap: wrap;
     font-weight: bold;
+    @media (max-width: 529px) {
+        margin-top: -67px;
+        height: 67px;
+        width: 233px;
+    }
 }
 
     @media(max-width: 1024px) {

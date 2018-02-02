@@ -69,7 +69,8 @@ $viewport_xxl: 	$item_width * 6 + $sidebar_width; /* 6 columns */
 
 	/* 2 columns */
 	.grid__item {
-		width: 50%;
+		margin: 1%;
+    	width: 47%;
 		border: none;
 	}
 

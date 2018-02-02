@@ -563,6 +563,10 @@ body {
 		width: 100%;
 		border-radius: 10px;
 	}
+	@media (max-width: 1200px) {
+		width: 50%;
+		padding: 1.5%;
+	}
 }
 
 
@@ -929,6 +933,9 @@ body {
 	&:hover {
 		opacity: 1;
 		transition: 0.4s;
+	}
+	@media (max-width: 1200px) {
+		width: 49%;
 	}
 }
 
@@ -1387,5 +1394,8 @@ body {
 	&:hover {
 		opacity: 1;
 		transition: 0.4s;
+	}
+	@media (max-width: 1200px) {
+		width: 49%;
 	}
 }
