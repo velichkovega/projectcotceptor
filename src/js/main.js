@@ -449,13 +449,17 @@ $(function(){
     autoplaySpeed: 2000
   });
 
-  var widthAgreed = $('.grid__item').width();
+  var widthAgreed = $('.grid__item').width() + 30;
   var hui = $(".tabs__caption").children("li").height() + 15;
- 
+  var widdowWidth = $(window).width();
 
 $( document ).ready(function() {
     $('.grid__item').css("height", widthAgreed);
-    $(".tabs__caption").children("li").css("width", hui);
+    if (gui > 200) {
+        $(".tabs__caption").children("li").css("width", hui - 90);
+    } else {
+        $(".tabs__caption").children("li").css("width", hui);
+    }
     // $(".content-part__item").css("height", partSlide);
 
     
@@ -534,7 +538,7 @@ $('.gallery-coub__sec').click(() => {
 
 $('.main__news-init').click(() => {
 	setTimeout(() => {
-        var mainNews = $(".position-reletive__grid-item").width() + 11;
+        var mainNews = $(".position-reletive__grid-item").width() + 20;
         $(".position-reletive__grid-item").css("height", mainNews);
 	},1)
 
