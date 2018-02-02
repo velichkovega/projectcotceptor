@@ -871,13 +871,13 @@ body {
 .line-calendar__center {
     position: absolute;
     width: 92px !important;
-
+    margin-left: 1px;
 }
 
 .text-calendar {
     text-align: center;
     color: #fff;
-    font-size: bold;
+    font-weight: bold;
 }
 
 .slick-arrow {
