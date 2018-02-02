@@ -2,12 +2,11 @@
 // @import '../../node_modules/slick-carousel/slick/slick-theme.css';
 
 html {
-    background-color: #fff !important;
+    background-color: #0050b5 !important;
 }
 
 .body-main {
-    background-color: #fff !important;
-        background-image: url(../img/background.png);
+    background-color: #0050b5 !important;
     background-repeat: repeat;
     position: relative;
 }
@@ -54,11 +53,12 @@ body {
 }
 
 .header-main-page {
+    background-color: #0050b5;
     width: 100%;
 }
 
 .header-main-page__video {
-    background-image: url(../img/logo-main.jpg);
+    // background-image: url(../img/logo-main.jpg);
     // background: no-repeat;
     background-position: center center;
     background-size: cover;
