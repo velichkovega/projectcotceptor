@@ -1119,6 +1119,7 @@ body {
 	margin: 0 -20px;	
 	img {
 		width: 100%;
+		padding: 20px;
 	}
 }
 
@@ -1170,7 +1171,7 @@ body {
 }
 
 .button__next-prev__tabs {
-	display: none;
+	display: none !important;
 	position: absolute;
 	width: 75%;
 	bottom: 0;
@@ -1399,4 +1400,8 @@ body {
 	@media (max-width: 1200px) {
 		width: 49%;
 	}
+}
+
+#theSidebar {
+	display: none !important;
 }

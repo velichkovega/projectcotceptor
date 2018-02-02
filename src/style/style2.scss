@@ -91,8 +91,8 @@ body {
 	}
 	.view-single .sidebar,
 	.view-single .grid {
-		-webkit-transform: translate3d(calc(#{$meta_width} - 100vw),0,0);
-		transform: translate3d(calc(#{$meta_width} - 100vw),0,0);
+		-webkit-transform: translate3d(calc(0),0,0);
+		transform: translate3d(calc(0),0,0);
 	}
 	.content__item {
 		right: 0;

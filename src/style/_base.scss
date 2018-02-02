@@ -183,7 +183,7 @@ button:focus {
 /* Overlay */
 .grid::after {
 	content: '';
-	background: rgba(202,202,202,0.4);
+	background: #0050b5;
 	opacity: 0;
 	position: absolute;
 	pointer-events: none;
@@ -607,7 +607,7 @@ button:focus {
 	z-index: 100;
 	top: 0;
 	left: 0;
-	background: $color_secondary;
+	background: #0050b5;
 	-webkit-transform-origin: 0 0;
 	transform-origin: 0 0;
 }
@@ -870,7 +870,7 @@ button:focus {
 
 .title__news-drid {
 	position: absolute;
-	z-index: 9999;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	bottom: 0;
