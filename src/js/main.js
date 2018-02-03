@@ -16,6 +16,24 @@
 //= partials/script.js
 
 
+$(".js-toggle-person-info").on("click", function(){
+    $(document).click(function (e) {
+        var clickedItem = $(e.target);
+        var personInfo = $('.person-info');
+        if (clickedItem.is('.person-info') ||
+            clickedItem.parents().is('.person-info') ||
+            clickedItem.is('.js-toggle-person-info') ||
+            clickedItem.parents().is('.js-toggle-person-info')
+        ) {
+            personInfo.addClass('active');
+        } else {
+            personInfo.removeClass('active');
+        }
+    
+
+
+    });
+});
 
 
 (function($){
@@ -463,26 +481,7 @@ $( document ).ready(function() {
     // $(".content-part__item").css("height", partSlide);
 
     
-    $(document).click(function (e) {
-        var clickedItem = $(e.target);
-        var personInfo = $('.person-info');
-        console.log(clickedItem.is('.person-info') || clickedItem.parents().is('.person-info') || clickedItem.is('.js-toggle-person-info'));
-        if (clickedItem.is('.person-info') ||
-            clickedItem.parents().is('.person-info') ||
-            clickedItem.is('.js-toggle-person-info') ||
-            clickedItem.parents().is('.js-toggle-person-info')
-        ) {
-            // если надо будет прятать эту херню при нажатии на кнопку просто убери строку ниже
-            return false;
-        } else {
-            personInfo.removeClass('active');
-        }
-        if (!personInfo.is(e.target) && personInfo.has(e.target).length === 0) {
-            container.hide();
-        }
 
-
-    });
 
     $(document).on('click','.js-toggle-person-info', function(e) {
         var personInfo = $('.person-info');

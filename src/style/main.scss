@@ -388,6 +388,10 @@ body {
 
 }
 
+.tab-slider {
+	display: none;
+}
+
 .main-content__tab-slider-stat {
 	height: 100%;
 	width: 100%;
@@ -917,6 +921,10 @@ body {
 	}
 }
 
+.tab-about__info {
+	display: none;
+}
+
 .touchtouch__img {
 	border-radius: 22px;
 	width: 33%;
@@ -1404,4 +1412,12 @@ body {
 
 #theSidebar {
 	display: none !important;
+}
+
+.about-fix {
+	li {
+		a {
+			height: auto !important;
+		}
+	}
 }
