@@ -539,6 +539,22 @@ $('.main__news-init').click(() => {
 	setTimeout(() => {
         var mainNews = $(".news-slider-init").width();
         $(".news-slider-init").css("height", mainNews);
-	},1)
+	},3)
+
+});
+
+$('.threeOpenModal').click(() => {
+	setTimeout(() => {
+        var mainAbout = $(".about-three__tabs").width();
+        $(".about-three__tabs").css("height", mainAbout);
+	},3)
+
+});
+
+$('.proj-height').click(() => {
+	setTimeout(() => {
+        var mainProj = $(".proj-height__item").width();
+        $(".proj-height__item").css("height", mainProj);
+	},3)
 
 });
