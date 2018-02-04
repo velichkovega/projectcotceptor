@@ -129,11 +129,12 @@ console.log('wer');
 		// add expanding element/placeholder 
 		var dummy = document.createElement('div');
 		dummy.className = 'placeholder';
+		var offsetLeft = $(item).offsetRelative("BODY").left;
+  		var offsetTop = $(item).offsetRelative("BODY").top;
 
 		// set the width/heigth and position
-		dummy.style.WebkitTransform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
-		dummy.style.transform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
-
+		dummy.style.WebkitTransform = 'translate3d(' + (offsetLeft - 5) + 'px, ' + (offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/screen.width + ',' + item.offsetWidth/screen.height + ',1)';
+		dummy.style.transform = 'translate3d(' + (offsetLeft - 5) + 'px, ' + (offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/screen.width + ',' + item.offsetWidth/screen.height + ',1)';
 		// add transition class 
 		classie.add(dummy, 'placeholder--trans-in');
 
@@ -172,6 +173,8 @@ console.log('wer');
 
 	function hideContent() {
 		var gridItem = gridItems[current], contentItem = contentItems[current];
+		var offsetLeft = $(gridItem).offsetRelative("BODY").left;
+   var offsetTop = $(gridItem).offsetRelative("BODY").top;
 
 		classie.remove(contentItem, 'content__item--show');
 		classie.remove(contentItemsContainer, 'content--show');
@@ -183,9 +186,8 @@ console.log('wer');
 
 			classie.removeClass(bodyEl, 'noscroll');
 
-			dummy.style.WebkitTransform = 'translate3d(' + gridItem.offsetLeft + 'px, ' + gridItem.offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth/gridItemsContainer.offsetWidth + ',' + gridItem.offsetHeight/getViewport('y') + ',1)';
-			dummy.style.transform = 'translate3d(' + gridItem.offsetLeft + 'px, ' + gridItem.offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth/gridItemsContainer.offsetWidth + ',' + gridItem.offsetHeight/getViewport('y') + ',1)';
-
+			dummy.style.WebkitTransform = 'translate3d(' + offsetLeft + 'px, ' + offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth/screen.width + ',' + gridItem.offsetWidth/screen.height + ',1)';
+			dummy.style.transform = 'translate3d(' + offsetLeft + 'px, ' + offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth/screen.width + ',' + gridItem.offsetWidth/screen.height + ',1)';
 			onEndTransition(dummy, function() {
 				// reset content scroll..
 				contentItem.parentNode.scrollTop = 0;

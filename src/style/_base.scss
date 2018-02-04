@@ -601,9 +601,9 @@ button:focus {
 /* Placeholder element (dummy that gets animated when we click on an item) */
 .placeholder {
 	pointer-events: none;
-	position: absolute;
-	width: calc(100% + 5px);
-	height: calc(100vh + 5px);
+    position: fixed;
+    width: calc(100vw + 5px);
+    height: calc(100vh + 5px);
 	z-index: 100;
 	top: 0;
 	left: 0;
