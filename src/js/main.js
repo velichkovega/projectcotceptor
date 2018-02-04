@@ -537,8 +537,8 @@ $('.gallery-coub__sec').click(() => {
 
 $('.main__news-init').click(() => {
 	setTimeout(() => {
-        var mainNews = $(".position-reletive__grid-item").width() + 20;
-        $(".position-reletive__grid-item").css("height", mainNews);
+        var mainNews = $(".news-slider-init").width();
+        $(".news-slider-init").css("height", mainNews);
 	},1)
 
 });
