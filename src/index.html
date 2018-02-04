@@ -105,11 +105,15 @@
 
 
 	<script>
-
-
-//        $(function() {
-//            Grid.init($('#og-grid-first'));
-//        });
+		$(".slider-stat").on("click", function(){
+			setTimeout(function(){
+				for(var i = 0; i<2; i++){
+					setTimeout(function(){
+						$(".main-content__tab-slider-stat").slick('slickNext');
+					},900);
+				};
+			},705);
+		});
 
 
         $('.initfirstBlockOpenModal').on('click', function () {
