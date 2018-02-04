@@ -558,3 +558,19 @@ $('.proj-height').click(() => {
 	},3)
 
 });
+
+$('.blog-coub').click(() => {
+	setTimeout(() => {
+        var mainProj = $(".blog-coub__item").width();
+        $(".blog-coub__item").css("height", mainProj);
+	},3)
+
+});
+
+$('.atlas-coub').click(() => {
+	setTimeout(() => {
+        var mainProj = $(".atlas-coub__item").width();
+        $(".atlas-coub__item").css("height", mainProj);
+	},3)
+
+});
