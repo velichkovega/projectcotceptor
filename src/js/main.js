@@ -574,3 +574,12 @@ $('.atlas-coub').click(() => {
 	},3)
 
 });
+
+$( document ).ready(function(){
+    var heightAboutFirst = $('.tab-about__img').height();
+    if (heightAboutFirst > 800) {
+        $('.tab-about__img').addClass('media__about-first');
+    } else {
+        $('.tab-about__img').removeClass('media__about-first');
+    } 
+});

@@ -910,13 +910,14 @@ body {
 			font-size: 18px;
 			font-weight: bold;
 			text-transform: uppercase;
-			margin-bottom: 20px;
+			margin-bottom: 14px;
 		}
 
 		.info-description {
 			font-size: 16px;
 			text-transform: uppercase;
 			line-height: 1.1;
+			padding-bottom: 15px;
 		}
 	}
 }
@@ -1521,4 +1522,13 @@ body {
 
 .atlas-coub__item {
 	width: 23%;
+}
+
+.media__about-first {
+	height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+	align-items: center !important;
+	// margin-bottom: 20%;
 }
